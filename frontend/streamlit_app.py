@@ -1,7 +1,9 @@
+import os
 import streamlit as st
 import requests
 import pandas as pd
 
+from rag.uploader import process_pdf
 
 API_URL = "http://127.0.0.1:8000/chat"
 
@@ -10,18 +12,19 @@ st.set_page_config(
     layout="wide"
 )
 
-# ---------------------------------------------------
+# --------------------------------------------------
 # SESSION
-# ---------------------------------------------------
+# --------------------------------------------------
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# ---------------------------------------------------
+# --------------------------------------------------
 # SIDEBAR
-# ---------------------------------------------------
+# --------------------------------------------------
 
 st.sidebar.title("🏢 FM AI Enterprise")
+
 st.sidebar.subheader(
     "Knowledge Base Upload"
 )
@@ -30,6 +33,31 @@ uploaded_file = st.sidebar.file_uploader(
     "Upload PDF",
     type=["pdf"]
 )
+
+if uploaded_file:
+
+    os.makedirs(
+        "uploads",
+        exist_ok=True
+    )
+
+    filepath = os.path.join(
+        "uploads",
+        uploaded_file.name
+    )
+
+    with open(filepath, "wb") as f:
+
+        f.write(
+            uploaded_file.getbuffer()
+        )
+
+    chunks = process_pdf(filepath)
+
+    st.sidebar.success(
+        f"✅ PDF Indexed ({chunks} chunks)"
+    )
+
 page = st.sidebar.radio(
     "Navigation",
     [
@@ -41,19 +69,28 @@ page = st.sidebar.radio(
     ]
 )
 
-# ---------------------------------------------------
+# --------------------------------------------------
 # AI ASSISTANT
-# ---------------------------------------------------
+# --------------------------------------------------
 
 if page == "AI Assistant":
 
     st.title("🤖 FM AI Enterprise Assistant")
 
     query = st.chat_input(
-        "Ask anything about HVAC, Electrical, Fire, Vendor..."
+        "Ask about HVAC, Electrical, Fire, Vendor, Incident..."
     )
 
     if query:
+
+        response = requests.post(
+            API_URL,
+            json={
+                "query": query
+            }
+        )
+
+        result = response.json()
 
         st.session_state.messages.append(
             {
@@ -62,41 +99,98 @@ if page == "AI Assistant":
             }
         )
 
-        response = requests.post(
-            API_URL,
-            json={"query": query}
-        )
-
-        result = response.json()
-
         st.session_state.messages.append(
             {
                 "role": "assistant",
-                "content": str(result)
+                "content": result
             }
         )
 
     for msg in st.session_state.messages:
 
-        with st.chat_message(msg["role"]):
-            st.write(msg["content"])
+        with st.chat_message(
+            msg["role"]
+        ):
 
-# ---------------------------------------------------
+            if msg["role"] == "user":
+
+                st.write(
+                    msg["content"]
+                )
+
+            else:
+
+                result = msg["content"]
+
+                st.subheader(
+                    result.get(
+                        "agent",
+                        "AI Assistant"
+                    )
+                )
+
+                st.write(
+                    result.get(
+                        "answer",
+                        ""
+                    )
+                )
+
+                if "recommendation" in result:
+
+                    st.info(
+                        result["recommendation"]
+                    )
+
+                if "citations" in result:
+
+                    st.subheader(
+                        "📚 Sources"
+                    )
+
+                    for source in result["citations"]:
+
+                        st.write(
+                            f"📄 {source['file']} | Page {source['page']}"
+                        )
+
+# --------------------------------------------------
 # ASSETS
-# ---------------------------------------------------
+# --------------------------------------------------
 
-from database.assets_service import get_assets
+elif page == "Assets":
 
-assets = get_assets()
+    st.title("🏭 Asset Management")
 
-st.dataframe(
-    assets,
-    use_container_width=True
-)
+    assets = pd.DataFrame({
 
-# ---------------------------------------------------
+        "Asset ID": [
+            "AHU-01",
+            "CH-01",
+            "DG-01"
+        ],
+
+        "System": [
+            "HVAC",
+            "HVAC",
+            "Electrical"
+        ],
+
+        "Health Score": [
+            95,
+            88,
+            92
+        ]
+    })
+
+    st.dataframe(
+        assets,
+        use_container_width=True
+    )
+
+# --------------------------------------------------
 # WORK ORDERS
-# ---------------------------------------------------
+# --------------------------------------------------
 
 elif page == "Work Orders":
 
@@ -134,9 +228,9 @@ elif page == "Work Orders":
         use_container_width=True
     )
 
-# ---------------------------------------------------
+# --------------------------------------------------
 # INCIDENTS
-# ---------------------------------------------------
+# --------------------------------------------------
 
 elif page == "Incidents":
 
@@ -169,10 +263,14 @@ elif page == "Incidents":
         incident_data,
         use_container_width=True
     )
-#Analytics Section
+
+# --------------------------------------------------
+# ANALYTICS
+# --------------------------------------------------
+
 elif page == "Analytics":
 
-    st.title("Facility Analytics")
+    st.title("📊 Facility Analytics")
 
     df = pd.DataFrame({
 
@@ -192,15 +290,23 @@ elif page == "Analytics":
     })
 
     st.bar_chart(
-        df.set_index("Severity")
+        df.set_index(
+            "Severity"
+        )
     )
 
-    st.metric(
-        "MTTR",
-        "3.5 Hours"
-    )
+    col1, col2 = st.columns(2)
 
-    st.metric(
-        "SLA Compliance",
-        "96%"
-    )
+    with col1:
+
+        st.metric(
+            "MTTR",
+            "3.5 Hours"
+        )
+
+    with col2:
+
+        st.metric(
+            "SLA Compliance",
+            "96%"
+        )
