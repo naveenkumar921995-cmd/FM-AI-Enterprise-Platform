@@ -4,12 +4,20 @@ def build_citations(docs):
 
     for doc in docs:
 
-        citations.append({
-            "file":
-                doc.metadata.get("source_file"),
+        citations.append(
+            {
+                "file":
+                    doc.metadata.get(
+                        "source_file",
+                        "Unknown"
+                    ),
 
-            "page":
-                doc.metadata.get("page_number")
-        })
+                "page":
+                    doc.metadata.get(
+                        "page",
+                        "N/A"
+                    )
+            }
+        )
 
     return citations
