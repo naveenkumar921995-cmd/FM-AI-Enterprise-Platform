@@ -6,18 +6,28 @@ from backend.llm import llm
 
 def hvac_agent(query):
 
+    # Retrieve relevant documents
     docs = retrieve_documents(query)
 
+    # Build citations
     citations = build_citations(docs)
 
+    # Prepare context
     context = "\n\n".join(
         [doc.page_content for doc in docs]
     )
 
+    # Hallucination-safe prompt
     prompt = f"""
-You are a senior HVAC engineer.
+You are a Senior HVAC Engineer.
 
-Answer only using the provided context.
+Rules:
+1. Answer ONLY from the provided context.
+2. If the answer is not available in the context, respond:
+   "Information not found in uploaded documents."
+3. Do not make assumptions.
+4. Provide troubleshooting steps when applicable.
+5. Keep the response professional and concise.
 
 Context:
 {context}
@@ -26,6 +36,7 @@ Question:
 {query}
 """
 
+    # Generate response
     response = llm.invoke(prompt)
 
     return {
@@ -33,5 +44,5 @@ Question:
         "answer": response.content,
         "citations": citations,
         "recommendation":
-            "Follow OEM maintenance procedures before escalation."
+            "Follow OEM maintenance procedures and verify alarms before escalation."
     }
