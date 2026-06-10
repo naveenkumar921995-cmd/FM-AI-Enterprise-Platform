@@ -1,32 +1,23 @@
+from sqlalchemy import text
+from database.db import engine
+
+
 def sql_agent(query):
 
-    query = query.lower()
+    sql = """
+    SELECT *
+    FROM work_orders
+    """
 
-    if "open work orders" in query:
+    with engine.connect() as conn:
 
-        sql = """
-        SELECT *
-        FROM work_orders
-        WHERE status='Open'
-        """
+        result = conn.execute(
+            text(sql)
+        )
 
-    elif "hvac complaints" in query:
-
-        sql = """
-        SELECT *
-        FROM complaints
-        WHERE system='HVAC'
-        """
-
-    else:
-
-        sql = "Query not recognised"
+        rows = result.fetchall()
 
     return {
-    "agent": "SQL Agent",
-    "answer": "SQL query generated successfully.",
-    "generated_sql": sql,
-    "sources": [],
-    "recommendation":
-        "Review query results and validate records before reporting."
-}
+        "agent": "SQL Agent",
+        "rows": [dict(r._mapping) for r in rows]
+    }
