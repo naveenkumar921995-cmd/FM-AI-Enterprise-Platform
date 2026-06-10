@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Incident Analytics")
+st.title("Facility Analytics")
 
-data = pd.DataFrame({
+df = pd.DataFrame({
     "Severity": [
         "Low",
         "Medium",
@@ -19,5 +19,15 @@ data = pd.DataFrame({
 })
 
 st.bar_chart(
-    data.set_index("Severity")
+    df.set_index("Severity")
+)
+
+st.metric(
+    "MTTR",
+    "3.5 Hours"
+)
+
+st.metric(
+    "SLA Compliance",
+    "96%"
 )
