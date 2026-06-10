@@ -4,9 +4,9 @@ from backend.llm import llm
 def route_query(query):
 
     prompt = f"""
-Classify the following facility management query.
+Classify this Facility Management query.
 
-Possible categories:
+Categories:
 
 HVAC
 Electrical
@@ -23,6 +23,4 @@ Return only category name.
 
     response = llm.invoke(prompt)
 
-    category = response.content.strip().lower()
-
-    return category
+    return response.content.strip().lower()
