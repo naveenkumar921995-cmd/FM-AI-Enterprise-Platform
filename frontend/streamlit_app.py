@@ -29,7 +29,8 @@ page = st.sidebar.radio(
         "AI Assistant",
         "Assets",
         "Work Orders",
-        "Incidents"
+        "Incidents",
+        "Analytics"
     ]
 )
 
