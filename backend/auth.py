@@ -1,16 +1,17 @@
-SECRET_KEY = "FM_SECRET_KEY"
+users = {
 
+    "admin": {
+        "password": "admin123",
+        "role": "Admin"
+    },
 
-def authenticate(
-        username,
-        password
-):
+    "manager": {
+        "password": "manager123",
+        "role": "Manager"
+    },
 
-    if (
-        username == "admin"
-        and
-        password == "admin123"
-    ):
-        return True
-
-    return False
+    "technician": {
+        "password": "tech123",
+        "role": "Technician"
+    }
+}
