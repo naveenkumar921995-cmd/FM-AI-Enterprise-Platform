@@ -1,9 +1,23 @@
-st.metric(
-    "MTTR",
-    "3.4 Hours"
-)
+import streamlit as st
+import pandas as pd
 
-st.metric(
-    "SLA",
-    "95%"
+st.title("Incident Analytics")
+
+data = pd.DataFrame({
+    "Severity": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+    ],
+    "Count": [
+        15,
+        8,
+        4,
+        2
+    ]
+})
+
+st.bar_chart(
+    data.set_index("Severity")
 )
