@@ -1,19 +1,20 @@
-chat_memory = {}
+chat_memory = []
 
 
-def save_message(user, role, content):
+def save_chat(
+        question,
+        answer
+):
 
-    if user not in chat_memory:
-        chat_memory[user] = []
+    chat_memory.append({
+        "question":
+            question,
 
-    chat_memory[user].append(
-        {
-            "role": role,
-            "content": content
-        }
-    )
+        "answer":
+            answer
+    })
 
 
-def get_memory(user):
+def get_memory():
 
-    return chat_memory.get(user, [])
+    return chat_memory
