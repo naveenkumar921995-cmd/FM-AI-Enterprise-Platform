@@ -22,7 +22,14 @@ if "messages" not in st.session_state:
 # ---------------------------------------------------
 
 st.sidebar.title("🏢 FM AI Enterprise")
+st.sidebar.subheader(
+    "Knowledge Base Upload"
+)
 
+uploaded_file = st.sidebar.file_uploader(
+    "Upload PDF",
+    type=["pdf"]
+)
 page = st.sidebar.radio(
     "Navigation",
     [
