@@ -2,7 +2,17 @@ import os
 import streamlit as st
 import requests
 import pandas as pd
+import sys
 
+ROOT_DIR = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        ".."
+    )
+)
+
+if ROOT_DIR not in sys.path:
+    sys.path.append(ROOT_DIR)
 from rag.uploader import process_pdf
 
 API_URL = "http://127.0.0.1:8000/chat"
