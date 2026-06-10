@@ -5,6 +5,13 @@ from backend.llm import llm
 def hvac_agent(query):
 
     docs = retrieve_documents(query)
+    from rag.citation_engine import (
+    build_citations
+)
+    citations = build_citations(
+    docs
+)
+    
 
     context = "\n\n".join(
         [doc.page_content for doc in docs]
@@ -32,6 +39,11 @@ Question:
             "file": doc.metadata.get("source_file"),
             "page": doc.metadata.get("page_number")
         })
+        return {
+    "agent": "HVAC Agent",
+    "answer": response.content,
+    "citations": citations
+}
 
     return {
         "agent": "HVAC Agent",
