@@ -162,6 +162,7 @@ elif page == "Incidents":
         incident_data,
         use_container_width=True
     )
+#Analytics Section
 elif page == "Analytics":
 
     st.title("Facility Analytics")
