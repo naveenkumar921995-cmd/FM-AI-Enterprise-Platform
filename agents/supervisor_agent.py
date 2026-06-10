@@ -1,80 +1,28 @@
-def route_query(query: str):
+from backend.llm import llm
 
-    query = query.lower()
 
-    hvac_keywords = [
-        "ahu",
-        "fcu",
-        "chiller",
-        "vrf",
-        "cooling tower",
-        "compressor",
-        "hvac"
-    ]
+def route_query(query):
 
-    electrical_keywords = [
-        "ups",
-        "transformer",
-        "dg",
-        "vfd",
-        "electrical",
-        "lt panel",
-        "ht panel"
-    ]
+    prompt = f"""
+Classify the following facility management query.
 
-    fire_keywords = [
-        "fire",
-        "sprinkler",
-        "hydrant",
-        "fire alarm",
-        "detector"
-    ]
+Possible categories:
 
-    vendor_keywords = [
-        "vendor",
-        "amc",
-        "warranty",
-        "contract"
-    ]
+HVAC
+Electrical
+Fire
+Vendor
+Incident
+SQL
 
-    incident_keywords = [
-        "incident",
-        "accident",
-        "near miss",
-        "leakage",
-        "water leakage"
-    ]
+Query:
+{query}
 
-    sql_keywords = [
-        "show",
-        "list",
-        "count",
-        "how many",
-        "report"
-    ]
+Return only category name.
+"""
 
-    for word in hvac_keywords:
-        if word in query:
-            return "hvac"
+    response = llm.invoke(prompt)
 
-    for word in electrical_keywords:
-        if word in query:
-            return "electrical"
+    category = response.content.strip().lower()
 
-    for word in fire_keywords:
-        if word in query:
-            return "fire"
-
-    for word in vendor_keywords:
-        if word in query:
-            return "vendor"
-
-    for word in incident_keywords:
-        if word in query:
-            return "incident"
-
-    for word in sql_keywords:
-        if word in query:
-            return "sql"
-
-    return "general"
+    return category
