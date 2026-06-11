@@ -22,3 +22,5 @@ sqlalchemy
 passlib
 python-jose
 bcrypt
+plotly
+streamlit-option-menu
