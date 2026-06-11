@@ -24,3 +24,14 @@ python-jose
 bcrypt
 plotly
 streamlit-option-menu
+streamlit
+langchain
+langchain-community
+langgraph
+langchain-groq
+faiss-cpu
+sentence-transformers
+pypdf
+python-dotenv
+plotly
+pandas
