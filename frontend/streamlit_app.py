@@ -78,6 +78,9 @@ page = st.sidebar.radio(
     "Incidents",
     "Analytics"
 ]
+    if page == "Dashboard":
+
+    from frontend.dashboard import *
 )
 
 # --------------------------------------------------
