@@ -71,18 +71,22 @@ if uploaded_file:
 page = st.sidebar.radio(
     "Navigation",
     [
-    "Dashboard",
-    "AI Assistant",
-    "Assets",
-    "Work Orders",
-    "Incidents",
-    "Analytics"
-]
-    if page == "Dashboard":
-
-    from frontend.dashboard import *
+        "Dashboard",
+        "AI Assistant",
+        "Assets",
+        "Work Orders",
+        "Incidents",
+        "Analytics"
+    ]
 )
 
+# ---------------------------------------------------
+# DASHBOARD
+# ---------------------------------------------------
+
+if page == "Dashboard":
+
+    from frontend.dashboard import *
 # --------------------------------------------------
 # AI ASSISTANT
 # --------------------------------------------------
