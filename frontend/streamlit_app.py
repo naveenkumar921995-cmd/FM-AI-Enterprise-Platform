@@ -84,9 +84,9 @@ page = st.sidebar.radio(
 # DASHBOARD
 # ---------------------------------------------------
 
-if page == "Dashboard":
+if page == "Executive Dashboard":
 
-    from frontend.dashboard import *
+    import frontend.executive_dashboard
 # --------------------------------------------------
 # AI ASSISTANT
 # --------------------------------------------------
