@@ -71,12 +71,13 @@ if uploaded_file:
 page = st.sidebar.radio(
     "Navigation",
     [
-        "AI Assistant",
-        "Assets",
-        "Work Orders",
-        "Incidents",
-        "Analytics"
-    ]
+    "Dashboard",
+    "AI Assistant",
+    "Assets",
+    "Work Orders",
+    "Incidents",
+    "Analytics"
+]
 )
 
 # --------------------------------------------------
