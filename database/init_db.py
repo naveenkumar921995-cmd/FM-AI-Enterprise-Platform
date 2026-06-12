@@ -1,9 +1,41 @@
-from database.db import engine
-from database.models import Base
+import sqlite3
+import pandas as pd
 
-def create_database():
-    Base.metadata.create_all(bind=engine)
-    print("Database created successfully")
+conn = sqlite3.connect("database/fm.db")
 
-if __name__ == "__main__":
-    create_database()
+assets = pd.read_csv("data/assets.csv")
+work_orders = pd.read_csv("data/work_orders.csv")
+incidents = pd.read_csv("data/incidents.csv")
+vendors = pd.read_csv("data/vendors.csv")
+
+assets.to_sql(
+    "assets",
+    conn,
+    if_exists="replace",
+    index=False
+)
+
+work_orders.to_sql(
+    "work_orders",
+    conn,
+    if_exists="replace",
+    index=False
+)
+
+incidents.to_sql(
+    "incidents",
+    conn,
+    if_exists="replace",
+    index=False
+)
+
+vendors.to_sql(
+    "vendors",
+    conn,
+    if_exists="replace",
+    index=False
+)
+
+conn.close()
+
+print("Database Created Successfully")
