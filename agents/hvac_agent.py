@@ -1,17 +1,9 @@
-from rag.retriever import retrieve_documents
-from rag.citation_engine import build_citations
-
-from backend.llm import llm
-
-
-def hvac_agent(query):
-
-    # Retrieve relevant documents
-    docs = retrieve_documents(query)
-
-    # Build citations
-    citations = build_citations(docs)
-
+try:
+    from rag.retriever import retrieve_documents
+    from rag.citation_engine import build_citations
+except:
+    retrieve_documents = None
+    build_citations = None
     # Prepare context
     context = "\n\n".join(
         [doc.page_content for doc in docs]
