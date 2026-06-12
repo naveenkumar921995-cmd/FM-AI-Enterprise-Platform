@@ -1,7 +1,6 @@
-import os
 import streamlit as st
-import requests
 import pandas as pd
+import os
 import sys
 
 ROOT_DIR = os.path.abspath(
@@ -13,60 +12,37 @@ ROOT_DIR = os.path.abspath(
 
 if ROOT_DIR not in sys.path:
     sys.path.append(ROOT_DIR)
-from rag.uploader import process_pdf
 
-API_URL = "http://127.0.0.1:8000/chat"
+# -----------------------------------
+# IMPORT AGENTS
+# -----------------------------------
+
+from agents.supervisor_agent import route_query
+from agents.hvac_agent import hvac_agent
+from agents.electrical_agent import electrical_agent
+from agents.fire_agent import fire_agent
+
+# -----------------------------------
+# PAGE CONFIG
+# -----------------------------------
 
 st.set_page_config(
     page_title="FM AI Enterprise",
     layout="wide"
 )
 
-# --------------------------------------------------
+# -----------------------------------
 # SESSION
-# --------------------------------------------------
+# -----------------------------------
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# --------------------------------------------------
+# -----------------------------------
 # SIDEBAR
-# --------------------------------------------------
+# -----------------------------------
 
 st.sidebar.title("🏢 FM AI Enterprise")
-
-st.sidebar.subheader(
-    "Knowledge Base Upload"
-)
-
-uploaded_file = st.sidebar.file_uploader(
-    "Upload PDF",
-    type=["pdf"]
-)
-
-if uploaded_file:
-
-    os.makedirs(
-        "uploads",
-        exist_ok=True
-    )
-
-    filepath = os.path.join(
-        "uploads",
-        uploaded_file.name
-    )
-
-    with open(filepath, "wb") as f:
-
-        f.write(
-            uploaded_file.getbuffer()
-        )
-
-    chunks = process_pdf(filepath)
-
-    st.sidebar.success(
-        f"✅ PDF Indexed ({chunks} chunks)"
-    )
 
 page = st.sidebar.radio(
     "Navigation",
@@ -80,35 +56,78 @@ page = st.sidebar.radio(
     ]
 )
 
-# ---------------------------------------------------
+# -----------------------------------
 # DASHBOARD
-# ---------------------------------------------------
+# -----------------------------------
 
-if page == "Executive Dashboard":
+if page == "Dashboard":
 
-    import frontend.executive_dashboard
-# --------------------------------------------------
+    st.title("🏢 Executive Dashboard")
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
+        st.metric(
+            "Assets",
+            "500"
+        )
+
+    with col2:
+        st.metric(
+            "Open Work Orders",
+            "128"
+        )
+
+    with col3:
+        st.metric(
+            "Critical Incidents",
+            "12"
+        )
+
+    with col4:
+        st.metric(
+            "SLA Compliance",
+            "96%"
+        )
+
+    st.divider()
+
+    chart_data = pd.DataFrame(
+        {
+            "Month": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May"
+            ],
+            "Incidents": [
+                22,
+                18,
+                15,
+                12,
+                10
+            ]
+        }
+    )
+
+    st.line_chart(
+        chart_data.set_index("Month")
+    )
+
+# -----------------------------------
 # AI ASSISTANT
-# --------------------------------------------------
+# -----------------------------------
 
-if page == "AI Assistant":
+elif page == "AI Assistant":
 
-    st.title("🤖 FM AI Enterprise Assistant")
+    st.title("🤖 FM AI Assistant")
 
     query = st.chat_input(
-        "Ask about HVAC, Electrical, Fire, Vendor, Incident..."
+        "Ask HVAC, Electrical, Fire related question..."
     )
 
     if query:
-
-        response = requests.post(
-            API_URL,
-            json={
-                "query": query
-            }
-        )
-
-        result = response.json()
 
         st.session_state.messages.append(
             {
@@ -116,6 +135,32 @@ if page == "AI Assistant":
                 "content": query
             }
         )
+
+        try:
+
+            category = route_query(query)
+
+            if "hvac" in category:
+                result = hvac_agent(query)
+
+            elif "electrical" in category:
+                result = electrical_agent(query)
+
+            elif "fire" in category:
+                result = fire_agent(query)
+
+            else:
+                result = {
+                    "agent": "Supervisor Agent",
+                    "answer": "Unable to determine correct department."
+                }
+
+        except Exception as e:
+
+            result = {
+                "agent": "System",
+                "answer": str(e)
+            }
 
         st.session_state.messages.append(
             {
@@ -126,9 +171,7 @@ if page == "AI Assistant":
 
     for msg in st.session_state.messages:
 
-        with st.chat_message(
-            msg["role"]
-        ):
+        with st.chat_message(msg["role"]):
 
             if msg["role"] == "user":
 
@@ -143,7 +186,7 @@ if page == "AI Assistant":
                 st.subheader(
                     result.get(
                         "agent",
-                        "AI Assistant"
+                        "Assistant"
                     )
                 )
 
@@ -163,18 +206,18 @@ if page == "AI Assistant":
                 if "citations" in result:
 
                     st.subheader(
-                        "📚 Sources"
+                        "📚 References"
                     )
 
-                    for source in result["citations"]:
+                    for item in result["citations"]:
 
                         st.write(
-                            f"📄 {source['file']} | Page {source['page']}"
+                            f"📄 {item.get('file')} | Page {item.get('page')}"
                         )
 
-# --------------------------------------------------
+# -----------------------------------
 # ASSETS
-# --------------------------------------------------
+# -----------------------------------
 
 elif page == "Assets":
 
@@ -206,26 +249,20 @@ elif page == "Assets":
         use_container_width=True
     )
 
-# --------------------------------------------------
+# -----------------------------------
 # WORK ORDERS
-# --------------------------------------------------
+# -----------------------------------
 
 elif page == "Work Orders":
 
-    st.title("📋 Work Order Dashboard")
+    st.title("📋 Work Orders")
 
-    wo_data = pd.DataFrame({
+    wo = pd.DataFrame({
 
         "WO ID": [
-            "WO-1001",
-            "WO-1002",
-            "WO-1003"
-        ],
-
-        "System": [
-            "HVAC",
-            "Fire",
-            "Electrical"
+            "WO1001",
+            "WO1002",
+            "WO1003"
         ],
 
         "Priority": [
@@ -242,33 +279,28 @@ elif page == "Work Orders":
     })
 
     st.dataframe(
-        wo_data,
+        wo,
         use_container_width=True
     )
 
-# --------------------------------------------------
+# -----------------------------------
 # INCIDENTS
-# --------------------------------------------------
+# -----------------------------------
 
 elif page == "Incidents":
 
-    st.title("🚨 Incident Dashboard")
+    st.title("🚨 Incidents")
 
-    incident_data = pd.DataFrame({
+    incidents = pd.DataFrame({
 
         "Incident ID": [
-            "INC-1001",
-            "INC-1002"
-        ],
-
-        "Description": [
-            "Water leakage basement",
-            "Fire detector fault"
+            "INC001",
+            "INC002"
         ],
 
         "Severity": [
-            "Medium",
-            "High"
+            "High",
+            "Medium"
         ],
 
         "Status": [
@@ -278,17 +310,17 @@ elif page == "Incidents":
     })
 
     st.dataframe(
-        incident_data,
+        incidents,
         use_container_width=True
     )
 
-# --------------------------------------------------
+# -----------------------------------
 # ANALYTICS
-# --------------------------------------------------
+# -----------------------------------
 
 elif page == "Analytics":
 
-    st.title("📊 Facility Analytics")
+    st.title("📊 Analytics")
 
     df = pd.DataFrame({
 
@@ -300,31 +332,13 @@ elif page == "Analytics":
         ],
 
         "Count": [
-            12,
-            9,
-            4,
-            2
+            10,
+            15,
+            8,
+            3
         ]
     })
 
     st.bar_chart(
-        df.set_index(
-            "Severity"
-        )
+        df.set_index("Severity")
     )
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-
-        st.metric(
-            "MTTR",
-            "3.5 Hours"
-        )
-
-    with col2:
-
-        st.metric(
-            "SLA Compliance",
-            "96%"
-        )
