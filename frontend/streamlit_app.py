@@ -219,36 +219,50 @@ elif page == "AI Assistant":
 # ASSETS
 # -----------------------------------
 
+# -----------------------------------
+# ASSETS
+# -----------------------------------
+
 elif page == "Assets":
 
     st.title("🏭 Asset Management")
 
-    assets = pd.DataFrame({
+    assets = pd.read_csv(
+        "data/assets.csv"
+    )
 
-        "Asset ID": [
-            "AHU-01",
-            "CH-01",
-            "DG-01"
-        ],
+    col1, col2, col3 = st.columns(3)
 
-        "System": [
-            "HVAC",
-            "HVAC",
-            "Electrical"
-        ],
+    with col1:
+        st.metric(
+            "Total Assets",
+            len(assets)
+        )
 
-        "Health Score": [
-            95,
-            88,
-            92
-        ]
-    })
+    with col2:
+        st.metric(
+            "HVAC Assets",
+            len(
+                assets[
+                    assets["System"] == "HVAC"
+                ]
+            )
+        )
+
+    with col3:
+        st.metric(
+            "Electrical Assets",
+            len(
+                assets[
+                    assets["System"] == "Electrical"
+                ]
+            )
+        )
 
     st.dataframe(
         assets,
         use_container_width=True
     )
-
 # -----------------------------------
 # WORK ORDERS
 # -----------------------------------
