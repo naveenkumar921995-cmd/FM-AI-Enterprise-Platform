@@ -1,1 +1,501 @@
-
+asset_id,asset_name,system,location,status,health_score
+AST-0001,Lift Asset 1,Lift,Basement,Maintenance,74
+AST-0002,Electrical Asset 2,Electrical,Roof,Stopped,88
+AST-0003,STP Asset 3,STP,Tower B,Running,97
+AST-0004,Electrical Asset 4,Electrical,Tower B,Stopped,71
+AST-0005,STP Asset 5,STP,Tower A,Running,82
+AST-0006,Lift Asset 6,Lift,Parking,Maintenance,90
+AST-0007,WTP Asset 7,WTP,Plant Room,Maintenance,91
+AST-0008,HVAC Asset 8,HVAC,Plant Room,Maintenance,79
+AST-0009,WTP Asset 9,WTP,Roof,Stopped,89
+AST-0010,HVAC Asset 10,HVAC,Basement,Maintenance,74
+AST-0011,Fire Asset 11,Fire,Basement,Maintenance,76
+AST-0012,Lift Asset 12,Lift,Plant Room,Stopped,99
+AST-0013,Fire Asset 13,Fire,Parking,Stopped,76
+AST-0014,Electrical Asset 14,Electrical,Roof,Maintenance,83
+AST-0015,HVAC Asset 15,HVAC,Tower A,Running,93
+AST-0016,STP Asset 16,STP,Plant Room,Running,84
+AST-0017,WTP Asset 17,WTP,Parking,Running,87
+AST-0018,Electrical Asset 18,Electrical,Tower A,Stopped,72
+AST-0019,WTP Asset 19,WTP,Parking,Running,96
+AST-0020,Electrical Asset 20,Electrical,Tower A,Maintenance,73
+AST-0021,Fire Asset 21,Fire,Tower A,Stopped,75
+AST-0022,Electrical Asset 22,Electrical,Roof,Stopped,84
+AST-0023,STP Asset 23,STP,Basement,Stopped,71
+AST-0024,Lift Asset 24,Lift,Roof,Running,70
+AST-0025,Lift Asset 25,Lift,Basement,Stopped,81
+AST-0026,HVAC Asset 26,HVAC,Tower B,Stopped,94
+AST-0027,Lift Asset 27,Lift,Roof,Maintenance,97
+AST-0028,Fire Asset 28,Fire,Basement,Maintenance,77
+AST-0029,Fire Asset 29,Fire,Parking,Stopped,78
+AST-0030,HVAC Asset 30,HVAC,Plant Room,Stopped,76
+AST-0031,WTP Asset 31,WTP,Basement,Maintenance,83
+AST-0032,STP Asset 32,STP,Tower B,Running,96
+AST-0033,Lift Asset 33,Lift,Parking,Maintenance,86
+AST-0034,HVAC Asset 34,HVAC,Tower B,Running,94
+AST-0035,HVAC Asset 35,HVAC,Plant Room,Running,89
+AST-0036,Fire Asset 36,Fire,Basement,Running,78
+AST-0037,Lift Asset 37,Lift,Plant Room,Running,72
+AST-0038,STP Asset 38,STP,Plant Room,Maintenance,84
+AST-0039,Fire Asset 39,Fire,Basement,Maintenance,71
+AST-0040,HVAC Asset 40,HVAC,Plant Room,Maintenance,98
+AST-0041,WTP Asset 41,WTP,Parking,Stopped,71
+AST-0042,Lift Asset 42,Lift,Plant Room,Maintenance,99
+AST-0043,Electrical Asset 43,Electrical,Plant Room,Maintenance,70
+AST-0044,Fire Asset 44,Fire,Basement,Stopped,75
+AST-0045,Lift Asset 45,Lift,Tower A,Stopped,95
+AST-0046,Fire Asset 46,Fire,Tower A,Maintenance,79
+AST-0047,Lift Asset 47,Lift,Parking,Stopped,85
+AST-0048,Electrical Asset 48,Electrical,Basement,Maintenance,84
+AST-0049,STP Asset 49,STP,Basement,Stopped,86
+AST-0050,WTP Asset 50,WTP,Roof,Maintenance,83
+AST-0051,Fire Asset 51,Fire,Tower A,Stopped,70
+AST-0052,WTP Asset 52,WTP,Basement,Maintenance,99
+AST-0053,WTP Asset 53,WTP,Roof,Running,99
+AST-0054,Lift Asset 54,Lift,Roof,Maintenance,96
+AST-0055,WTP Asset 55,WTP,Parking,Running,95
+AST-0056,Fire Asset 56,Fire,Tower A,Running,91
+AST-0057,WTP Asset 57,WTP,Plant Room,Stopped,79
+AST-0058,Fire Asset 58,Fire,Tower A,Stopped,77
+AST-0059,Lift Asset 59,Lift,Parking,Stopped,94
+AST-0060,WTP Asset 60,WTP,Tower A,Stopped,70
+AST-0061,Electrical Asset 61,Electrical,Parking,Stopped,97
+AST-0062,Lift Asset 62,Lift,Basement,Stopped,87
+AST-0063,STP Asset 63,STP,Parking,Running,95
+AST-0064,Lift Asset 64,Lift,Plant Room,Maintenance,76
+AST-0065,Electrical Asset 65,Electrical,Parking,Stopped,81
+AST-0066,Electrical Asset 66,Electrical,Roof,Running,99
+AST-0067,STP Asset 67,STP,Tower B,Stopped,75
+AST-0068,WTP Asset 68,WTP,Tower B,Running,82
+AST-0069,HVAC Asset 69,HVAC,Roof,Running,71
+AST-0070,STP Asset 70,STP,Tower A,Maintenance,73
+AST-0071,HVAC Asset 71,HVAC,Roof,Maintenance,84
+AST-0072,Electrical Asset 72,Electrical,Tower B,Running,71
+AST-0073,HVAC Asset 73,HVAC,Roof,Running,99
+AST-0074,Fire Asset 74,Fire,Basement,Running,100
+AST-0075,Fire Asset 75,Fire,Plant Room,Stopped,77
+AST-0076,Electrical Asset 76,Electrical,Roof,Maintenance,74
+AST-0077,Lift Asset 77,Lift,Plant Room,Maintenance,89
+AST-0078,Lift Asset 78,Lift,Tower B,Running,81
+AST-0079,WTP Asset 79,WTP,Basement,Stopped,97
+AST-0080,Electrical Asset 80,Electrical,Tower A,Maintenance,90
+AST-0081,WTP Asset 81,WTP,Tower A,Running,79
+AST-0082,Lift Asset 82,Lift,Tower B,Stopped,91
+AST-0083,STP Asset 83,STP,Tower B,Stopped,95
+AST-0084,Lift Asset 84,Lift,Basement,Stopped,71
+AST-0085,Electrical Asset 85,Electrical,Basement,Running,71
+AST-0086,Fire Asset 86,Fire,Tower A,Running,77
+AST-0087,HVAC Asset 87,HVAC,Tower A,Maintenance,79
+AST-0088,Lift Asset 88,Lift,Roof,Stopped,83
+AST-0089,Fire Asset 89,Fire,Tower A,Stopped,84
+AST-0090,WTP Asset 90,WTP,Parking,Maintenance,73
+AST-0091,HVAC Asset 91,HVAC,Roof,Running,99
+AST-0092,Fire Asset 92,Fire,Basement,Stopped,85
+AST-0093,STP Asset 93,STP,Roof,Stopped,84
+AST-0094,HVAC Asset 94,HVAC,Parking,Maintenance,98
+AST-0095,Lift Asset 95,Lift,Parking,Maintenance,73
+AST-0096,Lift Asset 96,Lift,Plant Room,Stopped,72
+AST-0097,Fire Asset 97,Fire,Tower A,Maintenance,91
+AST-0098,STP Asset 98,STP,Parking,Stopped,70
+AST-0099,HVAC Asset 99,HVAC,Parking,Maintenance,88
+AST-0100,STP Asset 100,STP,Roof,Running,94
+AST-0101,Fire Asset 101,Fire,Tower A,Running,77
+AST-0102,STP Asset 102,STP,Basement,Maintenance,73
+AST-0103,STP Asset 103,STP,Parking,Running,99
+AST-0104,Lift Asset 104,Lift,Roof,Running,71
+AST-0105,Electrical Asset 105,Electrical,Basement,Maintenance,78
+AST-0106,WTP Asset 106,WTP,Plant Room,Maintenance,74
+AST-0107,WTP Asset 107,WTP,Roof,Running,79
+AST-0108,Lift Asset 108,Lift,Plant Room,Running,91
+AST-0109,Electrical Asset 109,Electrical,Parking,Running,76
+AST-0110,Fire Asset 110,Fire,Roof,Stopped,73
+AST-0111,Fire Asset 111,Fire,Roof,Running,80
+AST-0112,HVAC Asset 112,HVAC,Tower B,Stopped,73
+AST-0113,WTP Asset 113,WTP,Tower B,Running,77
+AST-0114,WTP Asset 114,WTP,Parking,Stopped,71
+AST-0115,Lift Asset 115,Lift,Roof,Stopped,72
+AST-0116,Lift Asset 116,Lift,Tower B,Running,85
+AST-0117,WTP Asset 117,WTP,Plant Room,Maintenance,85
+AST-0118,Lift Asset 118,Lift,Parking,Stopped,78
+AST-0119,HVAC Asset 119,HVAC,Basement,Running,78
+AST-0120,HVAC Asset 120,HVAC,Tower B,Running,81
+AST-0121,Electrical Asset 121,Electrical,Parking,Maintenance,93
+AST-0122,HVAC Asset 122,HVAC,Roof,Stopped,82
+AST-0123,Electrical Asset 123,Electrical,Tower B,Stopped,79
+AST-0124,STP Asset 124,STP,Plant Room,Running,85
+AST-0125,Lift Asset 125,Lift,Tower A,Stopped,88
+AST-0126,Fire Asset 126,Fire,Plant Room,Maintenance,88
+AST-0127,HVAC Asset 127,HVAC,Tower B,Stopped,90
+AST-0128,STP Asset 128,STP,Basement,Running,88
+AST-0129,HVAC Asset 129,HVAC,Tower A,Running,84
+AST-0130,Fire Asset 130,Fire,Plant Room,Maintenance,81
+AST-0131,HVAC Asset 131,HVAC,Tower B,Maintenance,96
+AST-0132,WTP Asset 132,WTP,Tower A,Stopped,91
+AST-0133,STP Asset 133,STP,Basement,Stopped,95
+AST-0134,Lift Asset 134,Lift,Roof,Maintenance,72
+AST-0135,HVAC Asset 135,HVAC,Tower A,Stopped,78
+AST-0136,Fire Asset 136,Fire,Plant Room,Stopped,82
+AST-0137,WTP Asset 137,WTP,Basement,Stopped,73
+AST-0138,WTP Asset 138,WTP,Roof,Running,76
+AST-0139,Electrical Asset 139,Electrical,Plant Room,Running,87
+AST-0140,WTP Asset 140,WTP,Plant Room,Maintenance,98
+AST-0141,Electrical Asset 141,Electrical,Parking,Stopped,84
+AST-0142,WTP Asset 142,WTP,Tower B,Running,100
+AST-0143,WTP Asset 143,WTP,Parking,Maintenance,77
+AST-0144,Fire Asset 144,Fire,Roof,Maintenance,93
+AST-0145,Lift Asset 145,Lift,Roof,Stopped,100
+AST-0146,HVAC Asset 146,HVAC,Parking,Running,85
+AST-0147,STP Asset 147,STP,Plant Room,Running,85
+AST-0148,STP Asset 148,STP,Tower A,Running,85
+AST-0149,HVAC Asset 149,HVAC,Plant Room,Maintenance,75
+AST-0150,Fire Asset 150,Fire,Basement,Stopped,70
+AST-0151,Electrical Asset 151,Electrical,Plant Room,Stopped,98
+AST-0152,Fire Asset 152,Fire,Parking,Maintenance,70
+AST-0153,WTP Asset 153,WTP,Parking,Stopped,94
+AST-0154,HVAC Asset 154,HVAC,Plant Room,Stopped,99
+AST-0155,Fire Asset 155,Fire,Tower B,Running,85
+AST-0156,Electrical Asset 156,Electrical,Tower A,Stopped,84
+AST-0157,HVAC Asset 157,HVAC,Roof,Maintenance,95
+AST-0158,HVAC Asset 158,HVAC,Roof,Stopped,80
+AST-0159,Fire Asset 159,Fire,Tower A,Stopped,72
+AST-0160,Lift Asset 160,Lift,Tower B,Stopped,96
+AST-0161,Electrical Asset 161,Electrical,Basement,Running,95
+AST-0162,Lift Asset 162,Lift,Plant Room,Running,82
+AST-0163,HVAC Asset 163,HVAC,Plant Room,Maintenance,93
+AST-0164,WTP Asset 164,WTP,Basement,Maintenance,76
+AST-0165,STP Asset 165,STP,Parking,Running,90
+AST-0166,Lift Asset 166,Lift,Basement,Maintenance,87
+AST-0167,STP Asset 167,STP,Tower B,Running,95
+AST-0168,Lift Asset 168,Lift,Plant Room,Maintenance,99
+AST-0169,Fire Asset 169,Fire,Tower A,Running,95
+AST-0170,HVAC Asset 170,HVAC,Parking,Stopped,83
+AST-0171,WTP Asset 171,WTP,Plant Room,Maintenance,93
+AST-0172,Lift Asset 172,Lift,Plant Room,Stopped,96
+AST-0173,HVAC Asset 173,HVAC,Plant Room,Maintenance,77
+AST-0174,Electrical Asset 174,Electrical,Basement,Maintenance,93
+AST-0175,Lift Asset 175,Lift,Basement,Running,91
+AST-0176,STP Asset 176,STP,Plant Room,Running,88
+AST-0177,Electrical Asset 177,Electrical,Roof,Running,90
+AST-0178,Electrical Asset 178,Electrical,Basement,Stopped,100
+AST-0179,Electrical Asset 179,Electrical,Basement,Maintenance,75
+AST-0180,HVAC Asset 180,HVAC,Plant Room,Stopped,80
+AST-0181,Fire Asset 181,Fire,Tower A,Maintenance,73
+AST-0182,STP Asset 182,STP,Basement,Running,83
+AST-0183,STP Asset 183,STP,Basement,Running,71
+AST-0184,Lift Asset 184,Lift,Tower B,Stopped,89
+AST-0185,WTP Asset 185,WTP,Roof,Stopped,89
+AST-0186,STP Asset 186,STP,Tower A,Maintenance,91
+AST-0187,Lift Asset 187,Lift,Roof,Maintenance,73
+AST-0188,HVAC Asset 188,HVAC,Roof,Running,99
+AST-0189,Fire Asset 189,Fire,Tower B,Running,84
+AST-0190,HVAC Asset 190,HVAC,Roof,Maintenance,85
+AST-0191,STP Asset 191,STP,Tower B,Running,76
+AST-0192,Lift Asset 192,Lift,Roof,Maintenance,72
+AST-0193,STP Asset 193,STP,Tower A,Running,90
+AST-0194,HVAC Asset 194,HVAC,Basement,Stopped,100
+AST-0195,Lift Asset 195,Lift,Roof,Maintenance,91
+AST-0196,HVAC Asset 196,HVAC,Plant Room,Running,93
+AST-0197,STP Asset 197,STP,Tower B,Maintenance,81
+AST-0198,HVAC Asset 198,HVAC,Parking,Stopped,99
+AST-0199,WTP Asset 199,WTP,Tower B,Stopped,72
+AST-0200,STP Asset 200,STP,Tower B,Maintenance,88
+AST-0201,Lift Asset 201,Lift,Plant Room,Stopped,100
+AST-0202,Electrical Asset 202,Electrical,Roof,Maintenance,95
+AST-0203,Electrical Asset 203,Electrical,Tower A,Stopped,85
+AST-0204,Lift Asset 204,Lift,Tower B,Maintenance,83
+AST-0205,Fire Asset 205,Fire,Tower A,Maintenance,71
+AST-0206,HVAC Asset 206,HVAC,Roof,Maintenance,75
+AST-0207,Fire Asset 207,Fire,Tower A,Running,74
+AST-0208,Electrical Asset 208,Electrical,Basement,Maintenance,82
+AST-0209,WTP Asset 209,WTP,Basement,Stopped,92
+AST-0210,HVAC Asset 210,HVAC,Basement,Stopped,77
+AST-0211,Electrical Asset 211,Electrical,Parking,Running,83
+AST-0212,Lift Asset 212,Lift,Roof,Stopped,76
+AST-0213,Fire Asset 213,Fire,Roof,Maintenance,99
+AST-0214,HVAC Asset 214,HVAC,Tower A,Maintenance,100
+AST-0215,Electrical Asset 215,Electrical,Plant Room,Maintenance,97
+AST-0216,HVAC Asset 216,HVAC,Plant Room,Stopped,92
+AST-0217,STP Asset 217,STP,Roof,Running,98
+AST-0218,WTP Asset 218,WTP,Tower A,Running,72
+AST-0219,HVAC Asset 219,HVAC,Plant Room,Stopped,90
+AST-0220,Lift Asset 220,Lift,Tower B,Maintenance,91
+AST-0221,Electrical Asset 221,Electrical,Tower A,Maintenance,74
+AST-0222,HVAC Asset 222,HVAC,Roof,Maintenance,78
+AST-0223,HVAC Asset 223,HVAC,Tower B,Stopped,94
+AST-0224,WTP Asset 224,WTP,Roof,Stopped,78
+AST-0225,Fire Asset 225,Fire,Roof,Maintenance,99
+AST-0226,Lift Asset 226,Lift,Tower A,Running,96
+AST-0227,STP Asset 227,STP,Roof,Maintenance,89
+AST-0228,Lift Asset 228,Lift,Parking,Stopped,80
+AST-0229,Lift Asset 229,Lift,Roof,Running,92
+AST-0230,WTP Asset 230,WTP,Basement,Maintenance,82
+AST-0231,Fire Asset 231,Fire,Tower B,Maintenance,97
+AST-0232,Electrical Asset 232,Electrical,Roof,Stopped,80
+AST-0233,Electrical Asset 233,Electrical,Tower A,Running,87
+AST-0234,WTP Asset 234,WTP,Tower A,Stopped,71
+AST-0235,HVAC Asset 235,HVAC,Tower A,Maintenance,95
+AST-0236,Lift Asset 236,Lift,Tower B,Stopped,86
+AST-0237,Electrical Asset 237,Electrical,Plant Room,Maintenance,72
+AST-0238,Fire Asset 238,Fire,Parking,Maintenance,92
+AST-0239,STP Asset 239,STP,Plant Room,Maintenance,79
+AST-0240,STP Asset 240,STP,Basement,Stopped,71
+AST-0241,Fire Asset 241,Fire,Plant Room,Running,94
+AST-0242,WTP Asset 242,WTP,Plant Room,Maintenance,80
+AST-0243,WTP Asset 243,WTP,Plant Room,Stopped,87
+AST-0244,HVAC Asset 244,HVAC,Roof,Stopped,71
+AST-0245,Electrical Asset 245,Electrical,Tower B,Maintenance,90
+AST-0246,STP Asset 246,STP,Plant Room,Maintenance,78
+AST-0247,Fire Asset 247,Fire,Tower B,Stopped,92
+AST-0248,HVAC Asset 248,HVAC,Plant Room,Maintenance,73
+AST-0249,Electrical Asset 249,Electrical,Basement,Stopped,84
+AST-0250,Electrical Asset 250,Electrical,Parking,Running,98
+AST-0251,Lift Asset 251,Lift,Tower B,Running,86
+AST-0252,WTP Asset 252,WTP,Tower B,Running,78
+AST-0253,WTP Asset 253,WTP,Plant Room,Stopped,78
+AST-0254,Lift Asset 254,Lift,Parking,Maintenance,93
+AST-0255,HVAC Asset 255,HVAC,Parking,Maintenance,96
+AST-0256,HVAC Asset 256,HVAC,Parking,Running,82
+AST-0257,HVAC Asset 257,HVAC,Roof,Running,93
+AST-0258,STP Asset 258,STP,Parking,Maintenance,87
+AST-0259,Electrical Asset 259,Electrical,Basement,Stopped,81
+AST-0260,Lift Asset 260,Lift,Basement,Maintenance,93
+AST-0261,HVAC Asset 261,HVAC,Tower A,Maintenance,94
+AST-0262,Electrical Asset 262,Electrical,Parking,Running,79
+AST-0263,Fire Asset 263,Fire,Roof,Maintenance,72
+AST-0264,WTP Asset 264,WTP,Tower A,Stopped,98
+AST-0265,Lift Asset 265,Lift,Plant Room,Running,86
+AST-0266,Fire Asset 266,Fire,Plant Room,Maintenance,96
+AST-0267,WTP Asset 267,WTP,Roof,Running,87
+AST-0268,Lift Asset 268,Lift,Plant Room,Stopped,96
+AST-0269,Electrical Asset 269,Electrical,Tower A,Running,98
+AST-0270,HVAC Asset 270,HVAC,Tower B,Running,94
+AST-0271,WTP Asset 271,WTP,Roof,Running,72
+AST-0272,Electrical Asset 272,Electrical,Roof,Maintenance,98
+AST-0273,HVAC Asset 273,HVAC,Roof,Stopped,72
+AST-0274,HVAC Asset 274,HVAC,Basement,Maintenance,91
+AST-0275,WTP Asset 275,WTP,Parking,Maintenance,85
+AST-0276,WTP Asset 276,WTP,Plant Room,Maintenance,76
+AST-0277,Fire Asset 277,Fire,Tower A,Running,88
+AST-0278,HVAC Asset 278,HVAC,Basement,Stopped,87
+AST-0279,WTP Asset 279,WTP,Basement,Running,94
+AST-0280,Lift Asset 280,Lift,Basement,Maintenance,81
+AST-0281,HVAC Asset 281,HVAC,Parking,Stopped,78
+AST-0282,Electrical Asset 282,Electrical,Plant Room,Running,73
+AST-0283,WTP Asset 283,WTP,Tower B,Running,77
+AST-0284,Fire Asset 284,Fire,Parking,Maintenance,98
+AST-0285,HVAC Asset 285,HVAC,Basement,Stopped,74
+AST-0286,HVAC Asset 286,HVAC,Tower B,Maintenance,100
+AST-0287,STP Asset 287,STP,Parking,Maintenance,89
+AST-0288,Fire Asset 288,Fire,Plant Room,Stopped,89
+AST-0289,Lift Asset 289,Lift,Basement,Maintenance,82
+AST-0290,WTP Asset 290,WTP,Tower A,Maintenance,88
+AST-0291,STP Asset 291,STP,Roof,Stopped,74
+AST-0292,WTP Asset 292,WTP,Tower B,Running,82
+AST-0293,STP Asset 293,STP,Basement,Maintenance,80
+AST-0294,STP Asset 294,STP,Parking,Stopped,96
+AST-0295,Electrical Asset 295,Electrical,Basement,Running,70
+AST-0296,STP Asset 296,STP,Tower B,Stopped,70
+AST-0297,Fire Asset 297,Fire,Roof,Stopped,90
+AST-0298,HVAC Asset 298,HVAC,Roof,Stopped,73
+AST-0299,HVAC Asset 299,HVAC,Tower A,Running,99
+AST-0300,STP Asset 300,STP,Tower B,Maintenance,86
+AST-0301,Electrical Asset 301,Electrical,Tower B,Stopped,93
+AST-0302,Electrical Asset 302,Electrical,Tower B,Running,73
+AST-0303,Electrical Asset 303,Electrical,Tower A,Running,70
+AST-0304,HVAC Asset 304,HVAC,Basement,Running,93
+AST-0305,Fire Asset 305,Fire,Plant Room,Stopped,71
+AST-0306,Fire Asset 306,Fire,Tower B,Maintenance,70
+AST-0307,Electrical Asset 307,Electrical,Basement,Maintenance,75
+AST-0308,STP Asset 308,STP,Plant Room,Maintenance,76
+AST-0309,HVAC Asset 309,HVAC,Tower A,Stopped,74
+AST-0310,STP Asset 310,STP,Plant Room,Maintenance,87
+AST-0311,Lift Asset 311,Lift,Plant Room,Maintenance,90
+AST-0312,Lift Asset 312,Lift,Parking,Running,74
+AST-0313,Fire Asset 313,Fire,Plant Room,Maintenance,79
+AST-0314,Fire Asset 314,Fire,Tower A,Stopped,80
+AST-0315,Electrical Asset 315,Electrical,Basement,Running,90
+AST-0316,Fire Asset 316,Fire,Tower B,Running,76
+AST-0317,Electrical Asset 317,Electrical,Plant Room,Maintenance,85
+AST-0318,WTP Asset 318,WTP,Basement,Stopped,81
+AST-0319,Electrical Asset 319,Electrical,Tower A,Maintenance,91
+AST-0320,Lift Asset 320,Lift,Tower B,Running,82
+AST-0321,Lift Asset 321,Lift,Tower A,Maintenance,70
+AST-0322,STP Asset 322,STP,Tower A,Stopped,70
+AST-0323,STP Asset 323,STP,Parking,Stopped,83
+AST-0324,WTP Asset 324,WTP,Basement,Maintenance,82
+AST-0325,Lift Asset 325,Lift,Tower A,Maintenance,79
+AST-0326,STP Asset 326,STP,Roof,Maintenance,71
+AST-0327,HVAC Asset 327,HVAC,Roof,Stopped,95
+AST-0328,Lift Asset 328,Lift,Parking,Maintenance,100
+AST-0329,STP Asset 329,STP,Basement,Stopped,70
+AST-0330,HVAC Asset 330,HVAC,Roof,Maintenance,73
+AST-0331,WTP Asset 331,WTP,Tower B,Stopped,74
+AST-0332,Electrical Asset 332,Electrical,Basement,Maintenance,83
+AST-0333,STP Asset 333,STP,Parking,Stopped,77
+AST-0334,WTP Asset 334,WTP,Plant Room,Stopped,94
+AST-0335,Fire Asset 335,Fire,Tower B,Stopped,95
+AST-0336,Fire Asset 336,Fire,Roof,Maintenance,86
+AST-0337,Lift Asset 337,Lift,Basement,Maintenance,93
+AST-0338,WTP Asset 338,WTP,Tower B,Stopped,71
+AST-0339,Fire Asset 339,Fire,Basement,Maintenance,96
+AST-0340,HVAC Asset 340,HVAC,Parking,Running,95
+AST-0341,STP Asset 341,STP,Parking,Stopped,98
+AST-0342,Electrical Asset 342,Electrical,Plant Room,Maintenance,95
+AST-0343,HVAC Asset 343,HVAC,Roof,Running,74
+AST-0344,Lift Asset 344,Lift,Roof,Running,91
+AST-0345,HVAC Asset 345,HVAC,Roof,Stopped,77
+AST-0346,WTP Asset 346,WTP,Tower B,Stopped,94
+AST-0347,STP Asset 347,STP,Tower A,Running,92
+AST-0348,STP Asset 348,STP,Plant Room,Maintenance,97
+AST-0349,HVAC Asset 349,HVAC,Tower B,Maintenance,95
+AST-0350,STP Asset 350,STP,Roof,Running,79
+AST-0351,HVAC Asset 351,HVAC,Plant Room,Maintenance,87
+AST-0352,Fire Asset 352,Fire,Parking,Maintenance,82
+AST-0353,HVAC Asset 353,HVAC,Tower A,Stopped,82
+AST-0354,WTP Asset 354,WTP,Tower A,Maintenance,93
+AST-0355,HVAC Asset 355,HVAC,Basement,Maintenance,92
+AST-0356,WTP Asset 356,WTP,Plant Room,Maintenance,96
+AST-0357,Fire Asset 357,Fire,Plant Room,Maintenance,74
+AST-0358,STP Asset 358,STP,Basement,Maintenance,77
+AST-0359,Fire Asset 359,Fire,Tower A,Stopped,97
+AST-0360,HVAC Asset 360,HVAC,Parking,Running,95
+AST-0361,Lift Asset 361,Lift,Tower B,Running,95
+AST-0362,STP Asset 362,STP,Tower B,Maintenance,98
+AST-0363,WTP Asset 363,WTP,Basement,Stopped,82
+AST-0364,STP Asset 364,STP,Tower B,Stopped,84
+AST-0365,Lift Asset 365,Lift,Tower B,Maintenance,81
+AST-0366,Lift Asset 366,Lift,Tower B,Maintenance,81
+AST-0367,Fire Asset 367,Fire,Parking,Running,85
+AST-0368,HVAC Asset 368,HVAC,Parking,Stopped,93
+AST-0369,Lift Asset 369,Lift,Tower B,Stopped,96
+AST-0370,Fire Asset 370,Fire,Parking,Maintenance,86
+AST-0371,WTP Asset 371,WTP,Tower B,Stopped,85
+AST-0372,WTP Asset 372,WTP,Parking,Maintenance,94
+AST-0373,Lift Asset 373,Lift,Tower A,Stopped,99
+AST-0374,Electrical Asset 374,Electrical,Parking,Running,93
+AST-0375,WTP Asset 375,WTP,Tower B,Stopped,81
+AST-0376,Fire Asset 376,Fire,Plant Room,Running,79
+AST-0377,Electrical Asset 377,Electrical,Basement,Maintenance,96
+AST-0378,Fire Asset 378,Fire,Tower B,Running,73
+AST-0379,HVAC Asset 379,HVAC,Roof,Stopped,83
+AST-0380,Electrical Asset 380,Electrical,Basement,Stopped,98
+AST-0381,STP Asset 381,STP,Tower B,Maintenance,81
+AST-0382,Lift Asset 382,Lift,Basement,Running,76
+AST-0383,WTP Asset 383,WTP,Plant Room,Running,79
+AST-0384,Lift Asset 384,Lift,Tower B,Running,81
+AST-0385,STP Asset 385,STP,Basement,Stopped,73
+AST-0386,Electrical Asset 386,Electrical,Roof,Maintenance,85
+AST-0387,WTP Asset 387,WTP,Basement,Running,75
+AST-0388,Fire Asset 388,Fire,Parking,Running,84
+AST-0389,Fire Asset 389,Fire,Basement,Maintenance,77
+AST-0390,Electrical Asset 390,Electrical,Roof,Stopped,77
+AST-0391,WTP Asset 391,WTP,Roof,Maintenance,80
+AST-0392,Lift Asset 392,Lift,Plant Room,Maintenance,84
+AST-0393,STP Asset 393,STP,Parking,Maintenance,82
+AST-0394,Lift Asset 394,Lift,Tower B,Maintenance,74
+AST-0395,Electrical Asset 395,Electrical,Roof,Stopped,89
+AST-0396,STP Asset 396,STP,Basement,Running,72
+AST-0397,STP Asset 397,STP,Basement,Stopped,73
+AST-0398,HVAC Asset 398,HVAC,Basement,Maintenance,94
+AST-0399,STP Asset 399,STP,Tower A,Maintenance,81
+AST-0400,STP Asset 400,STP,Parking,Maintenance,94
+AST-0401,STP Asset 401,STP,Tower A,Running,87
+AST-0402,Lift Asset 402,Lift,Tower B,Maintenance,98
+AST-0403,WTP Asset 403,WTP,Roof,Running,95
+AST-0404,Electrical Asset 404,Electrical,Tower B,Stopped,96
+AST-0405,STP Asset 405,STP,Plant Room,Maintenance,95
+AST-0406,Electrical Asset 406,Electrical,Roof,Stopped,81
+AST-0407,HVAC Asset 407,HVAC,Basement,Stopped,99
+AST-0408,WTP Asset 408,WTP,Parking,Maintenance,95
+AST-0409,WTP Asset 409,WTP,Tower B,Maintenance,96
+AST-0410,Electrical Asset 410,Electrical,Parking,Maintenance,75
+AST-0411,HVAC Asset 411,HVAC,Plant Room,Maintenance,70
+AST-0412,WTP Asset 412,WTP,Parking,Maintenance,92
+AST-0413,STP Asset 413,STP,Parking,Running,100
+AST-0414,HVAC Asset 414,HVAC,Tower A,Running,83
+AST-0415,HVAC Asset 415,HVAC,Tower A,Maintenance,95
+AST-0416,Lift Asset 416,Lift,Parking,Stopped,91
+AST-0417,HVAC Asset 417,HVAC,Parking,Stopped,100
+AST-0418,Electrical Asset 418,Electrical,Tower A,Stopped,70
+AST-0419,WTP Asset 419,WTP,Parking,Maintenance,71
+AST-0420,HVAC Asset 420,HVAC,Plant Room,Maintenance,92
+AST-0421,STP Asset 421,STP,Plant Room,Running,86
+AST-0422,Electrical Asset 422,Electrical,Basement,Maintenance,95
+AST-0423,HVAC Asset 423,HVAC,Tower A,Stopped,75
+AST-0424,Electrical Asset 424,Electrical,Basement,Stopped,70
+AST-0425,HVAC Asset 425,HVAC,Plant Room,Running,97
+AST-0426,Fire Asset 426,Fire,Basement,Maintenance,90
+AST-0427,STP Asset 427,STP,Parking,Maintenance,96
+AST-0428,HVAC Asset 428,HVAC,Parking,Maintenance,89
+AST-0429,Electrical Asset 429,Electrical,Plant Room,Running,85
+AST-0430,WTP Asset 430,WTP,Roof,Running,79
+AST-0431,Electrical Asset 431,Electrical,Basement,Running,76
+AST-0432,Electrical Asset 432,Electrical,Roof,Stopped,82
+AST-0433,Fire Asset 433,Fire,Basement,Maintenance,77
+AST-0434,Electrical Asset 434,Electrical,Tower B,Stopped,77
+AST-0435,Lift Asset 435,Lift,Parking,Stopped,91
+AST-0436,STP Asset 436,STP,Roof,Stopped,97
+AST-0437,Electrical Asset 437,Electrical,Roof,Running,96
+AST-0438,Lift Asset 438,Lift,Tower B,Stopped,73
+AST-0439,STP Asset 439,STP,Roof,Stopped,70
+AST-0440,WTP Asset 440,WTP,Parking,Stopped,90
+AST-0441,Lift Asset 441,Lift,Roof,Running,94
+AST-0442,Electrical Asset 442,Electrical,Basement,Maintenance,92
+AST-0443,WTP Asset 443,WTP,Plant Room,Running,72
+AST-0444,Electrical Asset 444,Electrical,Tower A,Running,72
+AST-0445,Fire Asset 445,Fire,Parking,Running,77
+AST-0446,Electrical Asset 446,Electrical,Plant Room,Maintenance,84
+AST-0447,Electrical Asset 447,Electrical,Parking,Stopped,85
+AST-0448,STP Asset 448,STP,Basement,Maintenance,86
+AST-0449,HVAC Asset 449,HVAC,Tower B,Running,96
+AST-0450,STP Asset 450,STP,Basement,Maintenance,85
+AST-0451,Fire Asset 451,Fire,Parking,Stopped,71
+AST-0452,WTP Asset 452,WTP,Tower A,Stopped,82
+AST-0453,STP Asset 453,STP,Tower A,Running,91
+AST-0454,Lift Asset 454,Lift,Roof,Stopped,79
+AST-0455,STP Asset 455,STP,Parking,Stopped,72
+AST-0456,WTP Asset 456,WTP,Basement,Running,87
+AST-0457,WTP Asset 457,WTP,Roof,Running,75
+AST-0458,HVAC Asset 458,HVAC,Tower A,Maintenance,88
+AST-0459,Electrical Asset 459,Electrical,Tower A,Maintenance,74
+AST-0460,WTP Asset 460,WTP,Tower B,Stopped,82
+AST-0461,WTP Asset 461,WTP,Plant Room,Running,88
+AST-0462,WTP Asset 462,WTP,Plant Room,Maintenance,98
+AST-0463,Fire Asset 463,Fire,Roof,Stopped,71
+AST-0464,HVAC Asset 464,HVAC,Basement,Stopped,79
+AST-0465,Electrical Asset 465,Electrical,Parking,Running,99
+AST-0466,Lift Asset 466,Lift,Tower B,Stopped,86
+AST-0467,Electrical Asset 467,Electrical,Basement,Stopped,100
+AST-0468,HVAC Asset 468,HVAC,Tower B,Running,84
+AST-0469,HVAC Asset 469,HVAC,Tower A,Stopped,86
+AST-0470,Lift Asset 470,Lift,Tower B,Stopped,90
+AST-0471,STP Asset 471,STP,Parking,Stopped,78
+AST-0472,WTP Asset 472,WTP,Plant Room,Running,97
+AST-0473,WTP Asset 473,WTP,Roof,Running,71
+AST-0474,Lift Asset 474,Lift,Roof,Running,100
+AST-0475,HVAC Asset 475,HVAC,Tower B,Running,81
+AST-0476,HVAC Asset 476,HVAC,Tower A,Running,80
+AST-0477,Fire Asset 477,Fire,Parking,Running,87
+AST-0478,HVAC Asset 478,HVAC,Tower A,Running,76
+AST-0479,HVAC Asset 479,HVAC,Tower A,Stopped,77
+AST-0480,Electrical Asset 480,Electrical,Tower B,Running,76
+AST-0481,HVAC Asset 481,HVAC,Basement,Stopped,75
+AST-0482,WTP Asset 482,WTP,Tower B,Running,72
+AST-0483,HVAC Asset 483,HVAC,Parking,Running,97
+AST-0484,Fire Asset 484,Fire,Roof,Maintenance,93
+AST-0485,Electrical Asset 485,Electrical,Basement,Maintenance,70
+AST-0486,Lift Asset 486,Lift,Roof,Maintenance,95
+AST-0487,Electrical Asset 487,Electrical,Plant Room,Maintenance,84
+AST-0488,HVAC Asset 488,HVAC,Plant Room,Stopped,76
+AST-0489,WTP Asset 489,WTP,Basement,Stopped,94
+AST-0490,STP Asset 490,STP,Tower B,Stopped,94
+AST-0491,Fire Asset 491,Fire,Tower B,Maintenance,92
+AST-0492,STP Asset 492,STP,Basement,Maintenance,84
+AST-0493,Fire Asset 493,Fire,Roof,Stopped,92
+AST-0494,Lift Asset 494,Lift,Basement,Stopped,70
+AST-0495,Electrical Asset 495,Electrical,Roof,Running,82
+AST-0496,HVAC Asset 496,HVAC,Basement,Maintenance,93
+AST-0497,Fire Asset 497,Fire,Tower A,Maintenance,81
+AST-0498,Fire Asset 498,Fire,Tower A,Maintenance,97
+AST-0499,Lift Asset 499,Lift,Roof,Maintenance,86
+AST-0500,Electrical Asset 500,Electrical,Roof,Maintenance,97

@@ -1,1 +1,1001 @@
-
+wo_id,system,priority,status,assigned_to
+WO-00001,Fire,High,Open,Team B
+WO-00002,Electrical,Low,In Progress,Team B
+WO-00003,HVAC,Low,Open,Team B
+WO-00004,Fire,High,Open,Team B
+WO-00005,Electrical,Medium,In Progress,Team B
+WO-00006,Fire,Medium,In Progress,Team C
+WO-00007,HVAC,High,Closed,Team A
+WO-00008,Electrical,Low,Closed,Team B
+WO-00009,Electrical,Low,Closed,Team C
+WO-00010,Fire,Medium,Open,Team A
+WO-00011,Fire,High,Open,Team A
+WO-00012,HVAC,High,Closed,Team B
+WO-00013,Electrical,Low,In Progress,Team C
+WO-00014,Fire,High,Open,Team A
+WO-00015,Fire,Low,Open,Team C
+WO-00016,Fire,High,In Progress,Team B
+WO-00017,Fire,High,Closed,Team A
+WO-00018,Fire,Medium,Open,Team A
+WO-00019,Fire,Low,Closed,Team C
+WO-00020,Fire,Low,In Progress,Team C
+WO-00021,Fire,High,Open,Team A
+WO-00022,HVAC,Low,In Progress,Team B
+WO-00023,Electrical,High,Closed,Team A
+WO-00024,Electrical,High,Open,Team A
+WO-00025,HVAC,Medium,In Progress,Team A
+WO-00026,HVAC,High,Closed,Team B
+WO-00027,Electrical,High,Open,Team B
+WO-00028,HVAC,High,Closed,Team C
+WO-00029,HVAC,Low,Closed,Team A
+WO-00030,Electrical,High,In Progress,Team B
+WO-00031,Electrical,High,Closed,Team A
+WO-00032,Fire,Low,Closed,Team B
+WO-00033,Electrical,Low,Open,Team A
+WO-00034,HVAC,Low,Open,Team A
+WO-00035,Electrical,Medium,Open,Team A
+WO-00036,Fire,High,Open,Team C
+WO-00037,Fire,High,Closed,Team A
+WO-00038,Electrical,Low,Closed,Team C
+WO-00039,Fire,High,Open,Team B
+WO-00040,Fire,Low,Closed,Team B
+WO-00041,Electrical,Low,In Progress,Team B
+WO-00042,Electrical,High,Open,Team C
+WO-00043,Fire,Low,In Progress,Team A
+WO-00044,Fire,Medium,Closed,Team B
+WO-00045,HVAC,High,Closed,Team B
+WO-00046,Electrical,Medium,In Progress,Team A
+WO-00047,Electrical,High,Closed,Team A
+WO-00048,HVAC,Medium,Closed,Team B
+WO-00049,HVAC,Medium,In Progress,Team C
+WO-00050,Electrical,High,Closed,Team A
+WO-00051,Fire,Low,Closed,Team A
+WO-00052,HVAC,Low,Closed,Team B
+WO-00053,HVAC,Low,Closed,Team A
+WO-00054,HVAC,Low,Open,Team B
+WO-00055,HVAC,High,In Progress,Team B
+WO-00056,Electrical,Medium,Closed,Team B
+WO-00057,HVAC,High,Open,Team B
+WO-00058,HVAC,Medium,In Progress,Team B
+WO-00059,Electrical,High,In Progress,Team B
+WO-00060,Electrical,Medium,Closed,Team C
+WO-00061,HVAC,Medium,Closed,Team A
+WO-00062,Fire,High,Closed,Team C
+WO-00063,Electrical,High,Closed,Team A
+WO-00064,HVAC,Low,Open,Team A
+WO-00065,HVAC,Low,In Progress,Team B
+WO-00066,Electrical,Low,In Progress,Team C
+WO-00067,Electrical,Medium,Closed,Team A
+WO-00068,Electrical,Low,In Progress,Team C
+WO-00069,HVAC,Low,Open,Team B
+WO-00070,Fire,High,Open,Team C
+WO-00071,Electrical,Medium,Closed,Team C
+WO-00072,HVAC,Medium,In Progress,Team C
+WO-00073,Electrical,Low,Open,Team A
+WO-00074,Fire,High,Closed,Team A
+WO-00075,Fire,Medium,Open,Team C
+WO-00076,Electrical,Low,Closed,Team C
+WO-00077,Electrical,High,Open,Team A
+WO-00078,Fire,Low,In Progress,Team A
+WO-00079,Fire,Low,In Progress,Team A
+WO-00080,Electrical,High,Open,Team B
+WO-00081,Fire,High,In Progress,Team B
+WO-00082,HVAC,High,In Progress,Team A
+WO-00083,Electrical,Medium,Closed,Team C
+WO-00084,Fire,High,Closed,Team C
+WO-00085,Electrical,Low,Open,Team A
+WO-00086,Fire,High,Open,Team A
+WO-00087,HVAC,High,In Progress,Team C
+WO-00088,HVAC,Medium,Open,Team C
+WO-00089,Fire,High,Closed,Team C
+WO-00090,Electrical,Medium,Closed,Team B
+WO-00091,Fire,Low,Open,Team A
+WO-00092,Fire,Medium,Open,Team A
+WO-00093,Electrical,Medium,In Progress,Team C
+WO-00094,Fire,Low,In Progress,Team C
+WO-00095,HVAC,Low,In Progress,Team B
+WO-00096,Electrical,High,Open,Team B
+WO-00097,Fire,Medium,Open,Team C
+WO-00098,Fire,Medium,Closed,Team C
+WO-00099,Electrical,Medium,Open,Team B
+WO-00100,HVAC,Medium,In Progress,Team A
+WO-00101,Electrical,High,Closed,Team B
+WO-00102,Fire,Medium,Closed,Team B
+WO-00103,Fire,Medium,Open,Team A
+WO-00104,Electrical,High,Open,Team A
+WO-00105,HVAC,Low,Closed,Team C
+WO-00106,HVAC,Medium,Open,Team C
+WO-00107,Fire,Medium,In Progress,Team B
+WO-00108,Fire,Low,In Progress,Team A
+WO-00109,HVAC,Medium,In Progress,Team B
+WO-00110,HVAC,High,Open,Team C
+WO-00111,Fire,Low,In Progress,Team B
+WO-00112,HVAC,High,Open,Team A
+WO-00113,Electrical,Medium,Closed,Team C
+WO-00114,Electrical,Low,In Progress,Team C
+WO-00115,Electrical,Medium,Closed,Team C
+WO-00116,HVAC,Low,Open,Team B
+WO-00117,HVAC,Medium,In Progress,Team C
+WO-00118,Fire,Medium,Closed,Team A
+WO-00119,Electrical,Low,In Progress,Team B
+WO-00120,Electrical,Medium,Open,Team C
+WO-00121,Electrical,High,Closed,Team C
+WO-00122,HVAC,Low,Closed,Team A
+WO-00123,Fire,Medium,Closed,Team B
+WO-00124,Fire,Medium,In Progress,Team C
+WO-00125,Electrical,High,Open,Team B
+WO-00126,HVAC,Medium,Open,Team A
+WO-00127,Fire,High,In Progress,Team A
+WO-00128,Electrical,High,In Progress,Team B
+WO-00129,Electrical,Medium,Closed,Team A
+WO-00130,Fire,Medium,In Progress,Team B
+WO-00131,Fire,Low,In Progress,Team C
+WO-00132,Fire,Low,In Progress,Team A
+WO-00133,Fire,High,Open,Team A
+WO-00134,HVAC,High,Closed,Team B
+WO-00135,Fire,High,Open,Team B
+WO-00136,Fire,Low,In Progress,Team A
+WO-00137,HVAC,Medium,Open,Team B
+WO-00138,Electrical,Medium,Closed,Team C
+WO-00139,Fire,Medium,In Progress,Team B
+WO-00140,HVAC,High,In Progress,Team B
+WO-00141,Fire,High,Open,Team B
+WO-00142,HVAC,Low,In Progress,Team A
+WO-00143,Fire,High,Closed,Team C
+WO-00144,HVAC,Medium,In Progress,Team C
+WO-00145,Fire,Medium,In Progress,Team C
+WO-00146,HVAC,High,Closed,Team C
+WO-00147,Electrical,Medium,Closed,Team C
+WO-00148,HVAC,Medium,Open,Team A
+WO-00149,HVAC,Medium,Open,Team A
+WO-00150,Electrical,Low,Open,Team B
+WO-00151,HVAC,Medium,Open,Team B
+WO-00152,Electrical,Medium,In Progress,Team C
+WO-00153,HVAC,High,Open,Team B
+WO-00154,HVAC,High,Closed,Team B
+WO-00155,HVAC,Low,Open,Team A
+WO-00156,HVAC,High,Open,Team C
+WO-00157,Fire,High,Closed,Team B
+WO-00158,Electrical,Low,In Progress,Team C
+WO-00159,HVAC,High,Closed,Team A
+WO-00160,Fire,Low,In Progress,Team A
+WO-00161,HVAC,High,Closed,Team A
+WO-00162,Electrical,Medium,In Progress,Team C
+WO-00163,Electrical,High,In Progress,Team B
+WO-00164,Electrical,Medium,Closed,Team A
+WO-00165,Electrical,High,In Progress,Team B
+WO-00166,Electrical,Low,In Progress,Team C
+WO-00167,HVAC,Medium,Closed,Team B
+WO-00168,Electrical,Medium,In Progress,Team A
+WO-00169,Electrical,Low,Open,Team B
+WO-00170,HVAC,High,In Progress,Team A
+WO-00171,Electrical,High,In Progress,Team B
+WO-00172,Electrical,High,Closed,Team B
+WO-00173,Electrical,High,In Progress,Team C
+WO-00174,HVAC,High,Closed,Team C
+WO-00175,Fire,Medium,Closed,Team A
+WO-00176,Electrical,Medium,In Progress,Team B
+WO-00177,Fire,Low,Open,Team B
+WO-00178,Fire,High,Closed,Team B
+WO-00179,Electrical,High,Closed,Team A
+WO-00180,Fire,High,Open,Team C
+WO-00181,Electrical,High,In Progress,Team B
+WO-00182,Fire,High,Closed,Team C
+WO-00183,Fire,High,In Progress,Team C
+WO-00184,Fire,High,Open,Team A
+WO-00185,Fire,Medium,Closed,Team C
+WO-00186,Electrical,Low,Closed,Team A
+WO-00187,Fire,High,In Progress,Team A
+WO-00188,HVAC,Low,Open,Team B
+WO-00189,Fire,Low,In Progress,Team C
+WO-00190,HVAC,Medium,In Progress,Team C
+WO-00191,Fire,Low,Closed,Team B
+WO-00192,HVAC,Medium,In Progress,Team B
+WO-00193,Fire,High,In Progress,Team C
+WO-00194,Fire,Medium,Closed,Team C
+WO-00195,Fire,Low,Open,Team A
+WO-00196,HVAC,Low,In Progress,Team A
+WO-00197,Fire,Medium,Closed,Team B
+WO-00198,HVAC,Low,Closed,Team A
+WO-00199,Electrical,Medium,Closed,Team C
+WO-00200,Electrical,High,In Progress,Team A
+WO-00201,Electrical,Medium,Open,Team B
+WO-00202,Fire,Medium,In Progress,Team C
+WO-00203,Electrical,Medium,Closed,Team A
+WO-00204,Electrical,Low,In Progress,Team A
+WO-00205,Fire,Medium,Open,Team A
+WO-00206,HVAC,High,Open,Team A
+WO-00207,HVAC,High,Closed,Team C
+WO-00208,HVAC,Low,Open,Team B
+WO-00209,Electrical,High,Closed,Team B
+WO-00210,Fire,Medium,Open,Team A
+WO-00211,HVAC,Medium,In Progress,Team B
+WO-00212,Fire,High,Closed,Team C
+WO-00213,Electrical,High,Closed,Team B
+WO-00214,Electrical,Low,Open,Team C
+WO-00215,HVAC,High,In Progress,Team B
+WO-00216,Fire,High,In Progress,Team C
+WO-00217,HVAC,Medium,Open,Team C
+WO-00218,Electrical,Medium,In Progress,Team B
+WO-00219,HVAC,High,In Progress,Team A
+WO-00220,Fire,Medium,Open,Team A
+WO-00221,HVAC,Medium,Closed,Team C
+WO-00222,Electrical,Medium,Open,Team C
+WO-00223,HVAC,Low,Closed,Team A
+WO-00224,Fire,Medium,Open,Team B
+WO-00225,Fire,Low,Open,Team A
+WO-00226,HVAC,High,In Progress,Team B
+WO-00227,Electrical,Medium,Closed,Team C
+WO-00228,HVAC,High,Open,Team A
+WO-00229,Fire,Medium,Closed,Team B
+WO-00230,Electrical,Medium,Open,Team A
+WO-00231,Electrical,Medium,Closed,Team B
+WO-00232,Electrical,Low,Closed,Team A
+WO-00233,Fire,Low,In Progress,Team C
+WO-00234,Electrical,High,Open,Team C
+WO-00235,Electrical,Low,Open,Team B
+WO-00236,Fire,Medium,Closed,Team A
+WO-00237,HVAC,Low,Closed,Team A
+WO-00238,HVAC,Low,In Progress,Team A
+WO-00239,Fire,Low,Open,Team C
+WO-00240,Electrical,Medium,In Progress,Team B
+WO-00241,Fire,Low,Closed,Team A
+WO-00242,Electrical,High,Closed,Team C
+WO-00243,Electrical,Medium,Closed,Team C
+WO-00244,Fire,Low,In Progress,Team A
+WO-00245,HVAC,High,Open,Team C
+WO-00246,Fire,Low,In Progress,Team C
+WO-00247,Electrical,High,Open,Team B
+WO-00248,Fire,Low,Closed,Team A
+WO-00249,Fire,High,Open,Team A
+WO-00250,Fire,Medium,Closed,Team A
+WO-00251,Electrical,Low,Open,Team A
+WO-00252,Electrical,High,In Progress,Team C
+WO-00253,Fire,Low,In Progress,Team B
+WO-00254,Fire,Low,In Progress,Team C
+WO-00255,Electrical,High,In Progress,Team B
+WO-00256,Electrical,Medium,Closed,Team B
+WO-00257,Electrical,Medium,Closed,Team A
+WO-00258,Electrical,Low,Open,Team B
+WO-00259,Electrical,Low,Open,Team B
+WO-00260,HVAC,Medium,In Progress,Team A
+WO-00261,Electrical,High,Closed,Team B
+WO-00262,Electrical,Medium,Open,Team A
+WO-00263,HVAC,Medium,Closed,Team A
+WO-00264,HVAC,High,Open,Team B
+WO-00265,HVAC,High,Open,Team A
+WO-00266,Fire,Medium,In Progress,Team C
+WO-00267,Fire,Medium,In Progress,Team B
+WO-00268,Electrical,High,Closed,Team C
+WO-00269,Electrical,Medium,In Progress,Team A
+WO-00270,Fire,Medium,In Progress,Team C
+WO-00271,Fire,High,Open,Team C
+WO-00272,Electrical,Medium,In Progress,Team C
+WO-00273,Fire,Low,Open,Team A
+WO-00274,Electrical,Low,In Progress,Team C
+WO-00275,HVAC,High,Closed,Team C
+WO-00276,Electrical,High,In Progress,Team A
+WO-00277,Fire,High,Closed,Team C
+WO-00278,Electrical,High,Closed,Team B
+WO-00279,Electrical,Medium,Open,Team B
+WO-00280,HVAC,High,Closed,Team A
+WO-00281,Electrical,Medium,In Progress,Team C
+WO-00282,HVAC,Low,Open,Team C
+WO-00283,Electrical,High,Open,Team C
+WO-00284,HVAC,Low,Open,Team A
+WO-00285,HVAC,Low,Closed,Team A
+WO-00286,HVAC,Medium,In Progress,Team B
+WO-00287,HVAC,Medium,Closed,Team B
+WO-00288,Electrical,High,Open,Team A
+WO-00289,HVAC,Low,In Progress,Team B
+WO-00290,Fire,Low,In Progress,Team C
+WO-00291,HVAC,High,Open,Team B
+WO-00292,Electrical,Low,Open,Team A
+WO-00293,Fire,Medium,Open,Team B
+WO-00294,HVAC,Medium,In Progress,Team C
+WO-00295,Electrical,Low,In Progress,Team B
+WO-00296,HVAC,Medium,Closed,Team B
+WO-00297,Electrical,Medium,Open,Team B
+WO-00298,HVAC,Medium,Open,Team B
+WO-00299,Electrical,High,Closed,Team C
+WO-00300,Fire,Medium,Closed,Team C
+WO-00301,HVAC,High,Open,Team A
+WO-00302,HVAC,Low,Open,Team A
+WO-00303,Electrical,High,Open,Team A
+WO-00304,HVAC,High,Open,Team A
+WO-00305,HVAC,Low,In Progress,Team B
+WO-00306,HVAC,Low,Closed,Team C
+WO-00307,Electrical,Medium,In Progress,Team A
+WO-00308,Electrical,High,In Progress,Team C
+WO-00309,HVAC,High,Closed,Team C
+WO-00310,Fire,Low,In Progress,Team A
+WO-00311,Electrical,Low,Closed,Team B
+WO-00312,Electrical,Medium,Open,Team C
+WO-00313,HVAC,High,Open,Team C
+WO-00314,Electrical,Low,Open,Team B
+WO-00315,Fire,Medium,In Progress,Team A
+WO-00316,HVAC,Medium,Closed,Team A
+WO-00317,HVAC,High,Open,Team B
+WO-00318,Fire,High,In Progress,Team B
+WO-00319,HVAC,Low,In Progress,Team B
+WO-00320,HVAC,Low,In Progress,Team C
+WO-00321,HVAC,Medium,Closed,Team C
+WO-00322,HVAC,Low,Closed,Team A
+WO-00323,Electrical,Low,Open,Team A
+WO-00324,HVAC,Low,In Progress,Team C
+WO-00325,Fire,High,Closed,Team C
+WO-00326,HVAC,Low,Open,Team B
+WO-00327,Fire,Low,Open,Team B
+WO-00328,Electrical,High,Closed,Team A
+WO-00329,HVAC,Medium,In Progress,Team A
+WO-00330,Electrical,Medium,Open,Team A
+WO-00331,HVAC,Low,In Progress,Team B
+WO-00332,HVAC,High,In Progress,Team C
+WO-00333,Electrical,Low,Open,Team A
+WO-00334,Electrical,Low,In Progress,Team A
+WO-00335,Fire,High,Open,Team B
+WO-00336,Electrical,Medium,Closed,Team C
+WO-00337,Electrical,High,Open,Team A
+WO-00338,Fire,High,In Progress,Team C
+WO-00339,HVAC,High,Closed,Team C
+WO-00340,Electrical,Medium,Open,Team C
+WO-00341,HVAC,Low,Open,Team C
+WO-00342,HVAC,Low,Open,Team B
+WO-00343,Fire,Low,Open,Team C
+WO-00344,Fire,High,Closed,Team B
+WO-00345,HVAC,Medium,Open,Team B
+WO-00346,Fire,High,In Progress,Team B
+WO-00347,Fire,High,In Progress,Team B
+WO-00348,Electrical,High,In Progress,Team B
+WO-00349,HVAC,Low,In Progress,Team C
+WO-00350,Fire,Low,Open,Team C
+WO-00351,HVAC,Low,Open,Team B
+WO-00352,Electrical,High,In Progress,Team B
+WO-00353,Electrical,Medium,Closed,Team C
+WO-00354,Fire,Medium,Open,Team C
+WO-00355,HVAC,High,Closed,Team C
+WO-00356,HVAC,High,Closed,Team B
+WO-00357,HVAC,High,Open,Team B
+WO-00358,HVAC,Medium,In Progress,Team B
+WO-00359,Fire,Low,In Progress,Team B
+WO-00360,HVAC,Low,Open,Team B
+WO-00361,Fire,Low,Closed,Team B
+WO-00362,Fire,Low,In Progress,Team B
+WO-00363,Fire,Medium,In Progress,Team B
+WO-00364,Fire,Low,Closed,Team B
+WO-00365,Fire,Medium,Closed,Team B
+WO-00366,HVAC,High,Closed,Team C
+WO-00367,HVAC,Low,In Progress,Team B
+WO-00368,Electrical,Low,Closed,Team B
+WO-00369,HVAC,Low,Closed,Team B
+WO-00370,Fire,Low,In Progress,Team B
+WO-00371,Electrical,Low,Closed,Team A
+WO-00372,Electrical,Medium,In Progress,Team A
+WO-00373,Fire,High,In Progress,Team C
+WO-00374,Fire,Medium,Open,Team C
+WO-00375,HVAC,Medium,In Progress,Team C
+WO-00376,HVAC,Medium,Open,Team C
+WO-00377,Electrical,Low,In Progress,Team C
+WO-00378,Fire,High,In Progress,Team B
+WO-00379,Fire,High,In Progress,Team B
+WO-00380,HVAC,Low,In Progress,Team A
+WO-00381,Electrical,High,Closed,Team B
+WO-00382,Fire,High,Closed,Team A
+WO-00383,Electrical,High,Open,Team C
+WO-00384,Electrical,Medium,Open,Team C
+WO-00385,Fire,High,Open,Team A
+WO-00386,HVAC,Low,Open,Team C
+WO-00387,Electrical,Medium,Closed,Team A
+WO-00388,Fire,Medium,Closed,Team A
+WO-00389,Electrical,Low,Open,Team A
+WO-00390,Fire,Medium,Open,Team C
+WO-00391,Fire,High,Closed,Team B
+WO-00392,HVAC,Medium,Closed,Team B
+WO-00393,Electrical,Low,Closed,Team C
+WO-00394,HVAC,Medium,In Progress,Team C
+WO-00395,Electrical,High,Open,Team C
+WO-00396,HVAC,High,Closed,Team A
+WO-00397,HVAC,Low,In Progress,Team C
+WO-00398,Electrical,High,Closed,Team C
+WO-00399,Fire,High,Open,Team B
+WO-00400,Fire,High,Closed,Team A
+WO-00401,Electrical,High,Closed,Team A
+WO-00402,Fire,High,Open,Team B
+WO-00403,Electrical,Low,Closed,Team A
+WO-00404,Fire,High,In Progress,Team A
+WO-00405,Electrical,High,Open,Team C
+WO-00406,Fire,High,Open,Team A
+WO-00407,HVAC,Low,Open,Team B
+WO-00408,Fire,High,Closed,Team C
+WO-00409,Electrical,Low,Closed,Team A
+WO-00410,HVAC,Low,Closed,Team B
+WO-00411,Fire,Medium,Open,Team A
+WO-00412,Electrical,Low,Open,Team C
+WO-00413,Electrical,Medium,Closed,Team B
+WO-00414,HVAC,High,Closed,Team C
+WO-00415,Fire,Low,Closed,Team C
+WO-00416,Fire,High,Open,Team A
+WO-00417,Electrical,Medium,In Progress,Team A
+WO-00418,HVAC,High,Closed,Team A
+WO-00419,HVAC,High,In Progress,Team B
+WO-00420,HVAC,High,Open,Team C
+WO-00421,Electrical,Medium,Closed,Team B
+WO-00422,Electrical,Medium,In Progress,Team A
+WO-00423,Fire,Medium,In Progress,Team B
+WO-00424,Fire,Medium,In Progress,Team B
+WO-00425,HVAC,High,Closed,Team C
+WO-00426,Fire,Low,Open,Team C
+WO-00427,HVAC,Medium,Closed,Team B
+WO-00428,Fire,Low,Open,Team C
+WO-00429,HVAC,High,Open,Team B
+WO-00430,Electrical,Medium,In Progress,Team C
+WO-00431,HVAC,Medium,In Progress,Team A
+WO-00432,Electrical,Low,In Progress,Team A
+WO-00433,Fire,Medium,In Progress,Team B
+WO-00434,Fire,High,Closed,Team A
+WO-00435,HVAC,Medium,Open,Team B
+WO-00436,Electrical,Medium,Closed,Team B
+WO-00437,Fire,Medium,In Progress,Team C
+WO-00438,HVAC,High,In Progress,Team B
+WO-00439,Fire,High,Open,Team B
+WO-00440,HVAC,Medium,Open,Team C
+WO-00441,Fire,Low,Open,Team B
+WO-00442,HVAC,High,Closed,Team C
+WO-00443,Electrical,Medium,Open,Team A
+WO-00444,Fire,Medium,Open,Team B
+WO-00445,Electrical,Low,In Progress,Team C
+WO-00446,Fire,Low,In Progress,Team A
+WO-00447,Fire,Low,In Progress,Team A
+WO-00448,HVAC,High,In Progress,Team B
+WO-00449,Fire,Medium,Closed,Team A
+WO-00450,HVAC,High,Closed,Team A
+WO-00451,Electrical,Medium,Open,Team B
+WO-00452,Electrical,High,In Progress,Team B
+WO-00453,Electrical,Low,Closed,Team C
+WO-00454,Fire,High,In Progress,Team B
+WO-00455,Electrical,Low,Open,Team A
+WO-00456,Electrical,Medium,Closed,Team B
+WO-00457,HVAC,High,In Progress,Team B
+WO-00458,HVAC,Medium,In Progress,Team B
+WO-00459,HVAC,Low,In Progress,Team B
+WO-00460,Fire,Medium,Open,Team C
+WO-00461,Electrical,High,In Progress,Team B
+WO-00462,Fire,Medium,Open,Team C
+WO-00463,Electrical,High,Closed,Team C
+WO-00464,Electrical,Low,Open,Team A
+WO-00465,Electrical,Low,Closed,Team A
+WO-00466,HVAC,High,Open,Team C
+WO-00467,HVAC,High,Closed,Team B
+WO-00468,HVAC,Low,Closed,Team B
+WO-00469,HVAC,Medium,In Progress,Team C
+WO-00470,Fire,Low,Open,Team A
+WO-00471,HVAC,High,Open,Team B
+WO-00472,HVAC,High,In Progress,Team C
+WO-00473,Fire,High,Closed,Team B
+WO-00474,Fire,Medium,Closed,Team A
+WO-00475,HVAC,Low,Open,Team C
+WO-00476,Fire,High,In Progress,Team B
+WO-00477,HVAC,High,Open,Team A
+WO-00478,HVAC,Low,Closed,Team B
+WO-00479,HVAC,Medium,Open,Team A
+WO-00480,Electrical,Medium,Open,Team C
+WO-00481,Fire,Medium,Closed,Team A
+WO-00482,Fire,Medium,In Progress,Team B
+WO-00483,Electrical,Low,Open,Team C
+WO-00484,HVAC,High,In Progress,Team B
+WO-00485,HVAC,High,In Progress,Team A
+WO-00486,Fire,High,Open,Team B
+WO-00487,Electrical,Medium,Closed,Team B
+WO-00488,HVAC,Medium,Closed,Team A
+WO-00489,HVAC,High,Closed,Team B
+WO-00490,Fire,Medium,Open,Team B
+WO-00491,Fire,Medium,Closed,Team B
+WO-00492,HVAC,High,Closed,Team A
+WO-00493,HVAC,Medium,In Progress,Team A
+WO-00494,Fire,Low,Closed,Team B
+WO-00495,HVAC,Low,Closed,Team B
+WO-00496,Electrical,High,Closed,Team B
+WO-00497,Fire,Medium,In Progress,Team C
+WO-00498,Electrical,High,Closed,Team A
+WO-00499,HVAC,Medium,Closed,Team A
+WO-00500,HVAC,Low,Closed,Team C
+WO-00501,Fire,Low,In Progress,Team A
+WO-00502,Electrical,Medium,In Progress,Team C
+WO-00503,Fire,Medium,Closed,Team A
+WO-00504,Electrical,High,Closed,Team C
+WO-00505,Fire,High,In Progress,Team B
+WO-00506,HVAC,High,Closed,Team B
+WO-00507,Electrical,Medium,In Progress,Team A
+WO-00508,Electrical,High,In Progress,Team C
+WO-00509,HVAC,Medium,Open,Team C
+WO-00510,HVAC,High,Open,Team C
+WO-00511,HVAC,Medium,Closed,Team C
+WO-00512,Fire,Medium,In Progress,Team A
+WO-00513,HVAC,Low,In Progress,Team A
+WO-00514,Electrical,Medium,In Progress,Team A
+WO-00515,Electrical,High,Open,Team C
+WO-00516,Electrical,Medium,Open,Team C
+WO-00517,Fire,Medium,In Progress,Team A
+WO-00518,Electrical,High,Closed,Team B
+WO-00519,HVAC,High,Open,Team A
+WO-00520,Electrical,High,Open,Team A
+WO-00521,Fire,High,Closed,Team B
+WO-00522,Fire,High,Closed,Team A
+WO-00523,Fire,High,In Progress,Team C
+WO-00524,HVAC,Low,In Progress,Team A
+WO-00525,Electrical,High,In Progress,Team C
+WO-00526,HVAC,High,Closed,Team A
+WO-00527,Electrical,Medium,In Progress,Team B
+WO-00528,Fire,Medium,Closed,Team A
+WO-00529,Electrical,Medium,Open,Team A
+WO-00530,Electrical,Medium,In Progress,Team B
+WO-00531,HVAC,Low,Open,Team C
+WO-00532,Fire,Medium,Closed,Team A
+WO-00533,HVAC,Low,Open,Team B
+WO-00534,Fire,Medium,Open,Team A
+WO-00535,Electrical,Medium,In Progress,Team A
+WO-00536,HVAC,Medium,Open,Team C
+WO-00537,Electrical,Low,Open,Team C
+WO-00538,Electrical,Medium,In Progress,Team A
+WO-00539,Electrical,High,Open,Team A
+WO-00540,Electrical,Low,Open,Team B
+WO-00541,Electrical,Low,Closed,Team A
+WO-00542,Fire,Low,In Progress,Team B
+WO-00543,Fire,Low,Open,Team C
+WO-00544,HVAC,High,Closed,Team C
+WO-00545,Fire,Medium,Open,Team C
+WO-00546,Fire,High,In Progress,Team A
+WO-00547,Fire,Low,Open,Team C
+WO-00548,Electrical,Low,Closed,Team C
+WO-00549,Electrical,High,Closed,Team B
+WO-00550,Electrical,Low,In Progress,Team A
+WO-00551,HVAC,Medium,Closed,Team B
+WO-00552,Fire,Low,Closed,Team C
+WO-00553,Fire,Medium,Closed,Team C
+WO-00554,Fire,Medium,Closed,Team B
+WO-00555,Fire,High,In Progress,Team C
+WO-00556,Fire,High,In Progress,Team A
+WO-00557,Fire,Low,In Progress,Team C
+WO-00558,HVAC,Low,Open,Team B
+WO-00559,Electrical,Low,Closed,Team B
+WO-00560,HVAC,Medium,Open,Team C
+WO-00561,Fire,Low,Open,Team C
+WO-00562,Fire,High,In Progress,Team C
+WO-00563,Electrical,Medium,In Progress,Team A
+WO-00564,Fire,High,In Progress,Team C
+WO-00565,HVAC,High,Closed,Team C
+WO-00566,Electrical,High,Closed,Team B
+WO-00567,Electrical,High,Open,Team B
+WO-00568,Electrical,High,In Progress,Team C
+WO-00569,Fire,Medium,In Progress,Team C
+WO-00570,Fire,Medium,In Progress,Team B
+WO-00571,Fire,Low,Closed,Team B
+WO-00572,Electrical,High,Closed,Team C
+WO-00573,Electrical,High,Open,Team B
+WO-00574,HVAC,Medium,In Progress,Team A
+WO-00575,HVAC,High,In Progress,Team C
+WO-00576,Electrical,Low,In Progress,Team C
+WO-00577,HVAC,Medium,In Progress,Team C
+WO-00578,Electrical,Medium,In Progress,Team C
+WO-00579,Electrical,High,Closed,Team A
+WO-00580,Electrical,Medium,Closed,Team A
+WO-00581,Fire,Low,In Progress,Team B
+WO-00582,Electrical,High,Open,Team C
+WO-00583,HVAC,Medium,In Progress,Team C
+WO-00584,Electrical,Low,Closed,Team A
+WO-00585,HVAC,High,Open,Team C
+WO-00586,HVAC,High,In Progress,Team A
+WO-00587,HVAC,Medium,In Progress,Team C
+WO-00588,Fire,Low,Open,Team A
+WO-00589,Electrical,Low,In Progress,Team B
+WO-00590,HVAC,Medium,In Progress,Team C
+WO-00591,Fire,Low,In Progress,Team A
+WO-00592,Electrical,Low,Open,Team C
+WO-00593,HVAC,High,Closed,Team C
+WO-00594,Fire,Medium,Open,Team A
+WO-00595,Electrical,High,In Progress,Team B
+WO-00596,Fire,Medium,In Progress,Team C
+WO-00597,Fire,Low,Closed,Team B
+WO-00598,HVAC,Medium,Open,Team B
+WO-00599,Fire,Low,Closed,Team A
+WO-00600,Fire,Medium,Open,Team B
+WO-00601,HVAC,Low,Closed,Team B
+WO-00602,Electrical,High,Open,Team A
+WO-00603,HVAC,Low,Open,Team C
+WO-00604,HVAC,High,Open,Team C
+WO-00605,HVAC,Medium,Open,Team B
+WO-00606,Electrical,Medium,Closed,Team A
+WO-00607,HVAC,High,Closed,Team C
+WO-00608,Fire,High,Closed,Team B
+WO-00609,Electrical,Medium,Closed,Team A
+WO-00610,Fire,Medium,Open,Team A
+WO-00611,Electrical,High,Open,Team A
+WO-00612,Fire,High,In Progress,Team C
+WO-00613,Fire,Medium,Closed,Team C
+WO-00614,Electrical,High,Open,Team B
+WO-00615,Electrical,Low,Closed,Team A
+WO-00616,Electrical,High,Closed,Team C
+WO-00617,HVAC,Medium,In Progress,Team B
+WO-00618,HVAC,High,Open,Team A
+WO-00619,Electrical,High,Closed,Team B
+WO-00620,Fire,High,Closed,Team C
+WO-00621,Fire,High,Closed,Team C
+WO-00622,HVAC,Medium,In Progress,Team A
+WO-00623,Fire,Low,Open,Team B
+WO-00624,Electrical,High,Closed,Team C
+WO-00625,HVAC,Medium,Closed,Team A
+WO-00626,Electrical,Low,In Progress,Team C
+WO-00627,Fire,Low,Open,Team C
+WO-00628,Electrical,High,Open,Team B
+WO-00629,HVAC,Medium,Open,Team B
+WO-00630,Electrical,High,In Progress,Team B
+WO-00631,Electrical,Medium,Closed,Team B
+WO-00632,HVAC,Low,In Progress,Team C
+WO-00633,HVAC,High,In Progress,Team B
+WO-00634,Electrical,Medium,Closed,Team B
+WO-00635,HVAC,Medium,In Progress,Team B
+WO-00636,HVAC,High,In Progress,Team A
+WO-00637,Fire,Medium,Open,Team B
+WO-00638,Electrical,Low,Open,Team A
+WO-00639,HVAC,Medium,Open,Team C
+WO-00640,HVAC,Low,In Progress,Team A
+WO-00641,Electrical,High,Closed,Team B
+WO-00642,HVAC,Medium,In Progress,Team C
+WO-00643,Fire,Medium,In Progress,Team C
+WO-00644,Fire,High,Closed,Team C
+WO-00645,Electrical,High,Closed,Team C
+WO-00646,Fire,Low,Open,Team B
+WO-00647,Electrical,High,In Progress,Team C
+WO-00648,Electrical,High,In Progress,Team A
+WO-00649,Electrical,Medium,Closed,Team B
+WO-00650,HVAC,Medium,Closed,Team B
+WO-00651,Electrical,Low,Open,Team B
+WO-00652,Electrical,Low,Open,Team C
+WO-00653,Fire,Medium,In Progress,Team B
+WO-00654,Electrical,High,In Progress,Team A
+WO-00655,HVAC,High,Closed,Team C
+WO-00656,HVAC,Low,Closed,Team A
+WO-00657,Electrical,Low,Open,Team B
+WO-00658,HVAC,Medium,Open,Team C
+WO-00659,Electrical,Low,Open,Team A
+WO-00660,HVAC,Low,Open,Team A
+WO-00661,Fire,Medium,Closed,Team A
+WO-00662,HVAC,Medium,Open,Team C
+WO-00663,Electrical,High,Closed,Team A
+WO-00664,HVAC,Medium,In Progress,Team B
+WO-00665,Fire,Medium,In Progress,Team C
+WO-00666,Fire,High,Open,Team A
+WO-00667,Electrical,Medium,Open,Team A
+WO-00668,HVAC,Medium,In Progress,Team C
+WO-00669,Fire,High,Open,Team A
+WO-00670,Electrical,High,In Progress,Team B
+WO-00671,HVAC,Low,Closed,Team A
+WO-00672,HVAC,Low,Closed,Team C
+WO-00673,Electrical,Medium,Closed,Team B
+WO-00674,Fire,Medium,Open,Team B
+WO-00675,HVAC,Low,In Progress,Team A
+WO-00676,HVAC,High,Open,Team C
+WO-00677,HVAC,High,Open,Team C
+WO-00678,Electrical,High,Closed,Team B
+WO-00679,Electrical,High,In Progress,Team B
+WO-00680,Electrical,Medium,In Progress,Team B
+WO-00681,Electrical,Low,In Progress,Team C
+WO-00682,Electrical,Low,Closed,Team B
+WO-00683,Electrical,High,Open,Team A
+WO-00684,HVAC,High,In Progress,Team A
+WO-00685,Fire,Medium,Open,Team A
+WO-00686,Electrical,Low,In Progress,Team C
+WO-00687,Electrical,Low,Closed,Team B
+WO-00688,Electrical,Low,In Progress,Team A
+WO-00689,HVAC,High,Open,Team C
+WO-00690,Electrical,Low,In Progress,Team B
+WO-00691,HVAC,High,Closed,Team A
+WO-00692,Electrical,Low,Closed,Team B
+WO-00693,Electrical,Low,Open,Team C
+WO-00694,Electrical,Low,Closed,Team A
+WO-00695,Fire,Medium,In Progress,Team B
+WO-00696,Fire,Medium,Open,Team C
+WO-00697,Fire,High,Closed,Team C
+WO-00698,Electrical,Medium,Open,Team A
+WO-00699,Electrical,Medium,In Progress,Team B
+WO-00700,Fire,Low,Closed,Team A
+WO-00701,HVAC,High,In Progress,Team B
+WO-00702,Electrical,Medium,Closed,Team C
+WO-00703,HVAC,Low,In Progress,Team A
+WO-00704,Fire,Low,Open,Team A
+WO-00705,HVAC,High,Open,Team A
+WO-00706,Fire,Low,In Progress,Team A
+WO-00707,HVAC,Low,Closed,Team A
+WO-00708,HVAC,Low,In Progress,Team B
+WO-00709,Electrical,High,Closed,Team C
+WO-00710,Fire,Medium,Closed,Team B
+WO-00711,Fire,High,In Progress,Team B
+WO-00712,HVAC,High,Open,Team C
+WO-00713,Fire,High,In Progress,Team A
+WO-00714,Electrical,High,Open,Team B
+WO-00715,Electrical,Low,Open,Team A
+WO-00716,Electrical,Medium,In Progress,Team A
+WO-00717,Electrical,High,Open,Team A
+WO-00718,HVAC,Low,Closed,Team A
+WO-00719,HVAC,High,In Progress,Team C
+WO-00720,Fire,Medium,Open,Team A
+WO-00721,Electrical,High,Closed,Team B
+WO-00722,HVAC,High,In Progress,Team C
+WO-00723,Fire,Medium,In Progress,Team A
+WO-00724,Electrical,Medium,In Progress,Team C
+WO-00725,Electrical,Low,In Progress,Team A
+WO-00726,Fire,High,Closed,Team C
+WO-00727,HVAC,High,Open,Team B
+WO-00728,Electrical,Medium,Open,Team B
+WO-00729,Electrical,Medium,Closed,Team A
+WO-00730,Electrical,High,Closed,Team B
+WO-00731,Fire,Low,Closed,Team A
+WO-00732,HVAC,Medium,In Progress,Team C
+WO-00733,Electrical,Low,Open,Team B
+WO-00734,HVAC,Medium,In Progress,Team C
+WO-00735,HVAC,High,Closed,Team C
+WO-00736,Fire,High,Open,Team A
+WO-00737,Electrical,Medium,In Progress,Team B
+WO-00738,HVAC,Medium,Open,Team C
+WO-00739,Fire,Low,In Progress,Team C
+WO-00740,HVAC,Medium,Closed,Team B
+WO-00741,Fire,Low,In Progress,Team B
+WO-00742,Fire,Low,Closed,Team C
+WO-00743,Electrical,High,Open,Team C
+WO-00744,Electrical,High,In Progress,Team A
+WO-00745,Electrical,Medium,Closed,Team A
+WO-00746,Electrical,High,In Progress,Team C
+WO-00747,Fire,Low,In Progress,Team A
+WO-00748,Electrical,Low,In Progress,Team C
+WO-00749,Fire,Medium,Open,Team A
+WO-00750,HVAC,Medium,Closed,Team A
+WO-00751,HVAC,Low,Open,Team A
+WO-00752,Fire,High,In Progress,Team A
+WO-00753,Electrical,Low,In Progress,Team C
+WO-00754,Electrical,High,Closed,Team B
+WO-00755,Fire,High,Open,Team C
+WO-00756,Fire,Low,Open,Team B
+WO-00757,Electrical,Medium,Closed,Team C
+WO-00758,HVAC,Medium,Closed,Team C
+WO-00759,HVAC,High,In Progress,Team A
+WO-00760,Electrical,Medium,In Progress,Team C
+WO-00761,HVAC,High,Open,Team C
+WO-00762,HVAC,Medium,Closed,Team B
+WO-00763,Fire,High,Closed,Team C
+WO-00764,Electrical,Low,Closed,Team C
+WO-00765,Electrical,Low,Closed,Team C
+WO-00766,Fire,High,Open,Team C
+WO-00767,HVAC,Low,Open,Team A
+WO-00768,HVAC,Low,Open,Team B
+WO-00769,Electrical,High,Closed,Team A
+WO-00770,HVAC,Medium,In Progress,Team C
+WO-00771,HVAC,High,Closed,Team B
+WO-00772,Fire,Medium,Closed,Team A
+WO-00773,Fire,Medium,Closed,Team A
+WO-00774,HVAC,High,Open,Team C
+WO-00775,Fire,Low,Open,Team B
+WO-00776,HVAC,High,In Progress,Team C
+WO-00777,HVAC,Low,Open,Team B
+WO-00778,HVAC,Medium,Open,Team B
+WO-00779,Fire,High,Closed,Team A
+WO-00780,Electrical,High,Closed,Team B
+WO-00781,Electrical,Medium,Closed,Team B
+WO-00782,Electrical,Low,Closed,Team C
+WO-00783,HVAC,High,Closed,Team A
+WO-00784,Electrical,High,Open,Team B
+WO-00785,Fire,High,Closed,Team A
+WO-00786,HVAC,Low,Open,Team C
+WO-00787,Fire,High,Open,Team C
+WO-00788,Electrical,High,Closed,Team C
+WO-00789,Fire,Low,Open,Team A
+WO-00790,Electrical,Medium,Closed,Team B
+WO-00791,Electrical,Medium,In Progress,Team C
+WO-00792,Electrical,Low,Closed,Team B
+WO-00793,HVAC,Medium,Open,Team A
+WO-00794,HVAC,Medium,Open,Team A
+WO-00795,HVAC,Medium,Open,Team C
+WO-00796,HVAC,Medium,In Progress,Team C
+WO-00797,Electrical,Low,Open,Team A
+WO-00798,Electrical,High,In Progress,Team B
+WO-00799,Fire,Medium,Closed,Team C
+WO-00800,Electrical,High,Closed,Team C
+WO-00801,Electrical,High,In Progress,Team B
+WO-00802,HVAC,High,Open,Team C
+WO-00803,Fire,High,In Progress,Team A
+WO-00804,Fire,Low,Open,Team B
+WO-00805,Electrical,Medium,Closed,Team C
+WO-00806,Electrical,Low,Open,Team B
+WO-00807,Electrical,Medium,Closed,Team C
+WO-00808,HVAC,Medium,In Progress,Team B
+WO-00809,Electrical,Medium,In Progress,Team B
+WO-00810,HVAC,Medium,In Progress,Team C
+WO-00811,HVAC,High,Closed,Team A
+WO-00812,Electrical,Medium,In Progress,Team B
+WO-00813,Fire,High,In Progress,Team B
+WO-00814,HVAC,Low,Closed,Team C
+WO-00815,HVAC,High,Open,Team B
+WO-00816,Fire,High,Open,Team A
+WO-00817,Electrical,High,In Progress,Team B
+WO-00818,HVAC,High,Closed,Team C
+WO-00819,Electrical,High,Closed,Team A
+WO-00820,HVAC,Medium,In Progress,Team C
+WO-00821,HVAC,Low,In Progress,Team B
+WO-00822,Electrical,High,Closed,Team A
+WO-00823,HVAC,Low,Open,Team B
+WO-00824,HVAC,Low,In Progress,Team B
+WO-00825,Electrical,High,Open,Team A
+WO-00826,Fire,Medium,In Progress,Team A
+WO-00827,Fire,Medium,Closed,Team C
+WO-00828,HVAC,High,In Progress,Team C
+WO-00829,HVAC,Medium,In Progress,Team B
+WO-00830,HVAC,Low,Closed,Team B
+WO-00831,HVAC,Medium,Open,Team C
+WO-00832,Electrical,High,Closed,Team A
+WO-00833,Electrical,Medium,Open,Team B
+WO-00834,HVAC,Low,In Progress,Team C
+WO-00835,Electrical,Medium,Open,Team B
+WO-00836,Electrical,High,In Progress,Team B
+WO-00837,Electrical,Low,In Progress,Team B
+WO-00838,Electrical,High,Closed,Team A
+WO-00839,Fire,High,Closed,Team A
+WO-00840,HVAC,High,Open,Team B
+WO-00841,Electrical,High,Closed,Team A
+WO-00842,HVAC,Low,In Progress,Team B
+WO-00843,Electrical,Low,In Progress,Team C
+WO-00844,Fire,High,In Progress,Team C
+WO-00845,Electrical,Low,Closed,Team B
+WO-00846,HVAC,High,In Progress,Team C
+WO-00847,Fire,High,Closed,Team A
+WO-00848,Fire,Low,Closed,Team B
+WO-00849,HVAC,Medium,Closed,Team A
+WO-00850,Electrical,Medium,Closed,Team A
+WO-00851,Fire,Low,Closed,Team C
+WO-00852,HVAC,Medium,Closed,Team B
+WO-00853,Fire,High,Closed,Team C
+WO-00854,Fire,Medium,Closed,Team A
+WO-00855,HVAC,Medium,Open,Team C
+WO-00856,Fire,Medium,Open,Team B
+WO-00857,Electrical,High,Closed,Team C
+WO-00858,HVAC,Medium,Open,Team B
+WO-00859,Fire,Medium,Open,Team B
+WO-00860,Fire,High,In Progress,Team B
+WO-00861,Electrical,High,In Progress,Team A
+WO-00862,Electrical,Low,Closed,Team B
+WO-00863,Fire,Low,In Progress,Team A
+WO-00864,HVAC,Low,Closed,Team A
+WO-00865,HVAC,Medium,Closed,Team C
+WO-00866,Fire,Low,Open,Team A
+WO-00867,Fire,High,Open,Team B
+WO-00868,Fire,High,Closed,Team A
+WO-00869,Fire,High,Closed,Team C
+WO-00870,Electrical,Low,In Progress,Team A
+WO-00871,Electrical,Medium,Open,Team C
+WO-00872,Fire,Low,Open,Team B
+WO-00873,HVAC,Medium,Closed,Team B
+WO-00874,Fire,Low,Closed,Team A
+WO-00875,Electrical,Low,In Progress,Team B
+WO-00876,Electrical,Medium,Open,Team A
+WO-00877,HVAC,Medium,Open,Team A
+WO-00878,Electrical,Medium,In Progress,Team B
+WO-00879,Fire,High,Open,Team B
+WO-00880,HVAC,High,Open,Team B
+WO-00881,HVAC,Low,In Progress,Team B
+WO-00882,Fire,Low,Closed,Team B
+WO-00883,HVAC,High,Open,Team B
+WO-00884,HVAC,Medium,Open,Team B
+WO-00885,Fire,Medium,Open,Team B
+WO-00886,Electrical,High,Open,Team B
+WO-00887,HVAC,High,Closed,Team B
+WO-00888,Fire,Medium,Open,Team C
+WO-00889,Electrical,High,Closed,Team A
+WO-00890,HVAC,High,In Progress,Team A
+WO-00891,Fire,Low,Closed,Team A
+WO-00892,Fire,High,Closed,Team B
+WO-00893,Electrical,High,Open,Team C
+WO-00894,HVAC,Medium,In Progress,Team A
+WO-00895,HVAC,High,Open,Team A
+WO-00896,HVAC,High,Closed,Team A
+WO-00897,Fire,Low,Open,Team B
+WO-00898,HVAC,High,Closed,Team B
+WO-00899,Electrical,Low,In Progress,Team C
+WO-00900,HVAC,Low,In Progress,Team A
+WO-00901,Fire,High,In Progress,Team C
+WO-00902,Electrical,High,Closed,Team C
+WO-00903,Electrical,Low,In Progress,Team C
+WO-00904,HVAC,High,Closed,Team B
+WO-00905,Electrical,High,Open,Team B
+WO-00906,HVAC,High,In Progress,Team B
+WO-00907,HVAC,High,Open,Team B
+WO-00908,Electrical,Low,In Progress,Team C
+WO-00909,Electrical,High,Open,Team C
+WO-00910,Electrical,Medium,In Progress,Team C
+WO-00911,Electrical,Medium,Closed,Team B
+WO-00912,Electrical,Medium,Open,Team C
+WO-00913,Electrical,Low,Closed,Team B
+WO-00914,HVAC,Low,Closed,Team B
+WO-00915,Fire,Medium,In Progress,Team A
+WO-00916,Fire,Low,In Progress,Team A
+WO-00917,Electrical,Low,Closed,Team C
+WO-00918,HVAC,Medium,Closed,Team C
+WO-00919,HVAC,Low,Open,Team C
+WO-00920,HVAC,Medium,In Progress,Team A
+WO-00921,HVAC,High,In Progress,Team C
+WO-00922,Fire,Low,Open,Team B
+WO-00923,HVAC,Medium,Closed,Team A
+WO-00924,HVAC,Low,In Progress,Team B
+WO-00925,Electrical,Low,Open,Team A
+WO-00926,HVAC,Medium,Open,Team C
+WO-00927,Electrical,Low,Closed,Team C
+WO-00928,Electrical,Low,Open,Team A
+WO-00929,Electrical,High,In Progress,Team C
+WO-00930,HVAC,High,Closed,Team B
+WO-00931,HVAC,High,Closed,Team A
+WO-00932,Fire,Low,Closed,Team C
+WO-00933,Electrical,High,Open,Team B
+WO-00934,HVAC,Low,Closed,Team B
+WO-00935,HVAC,High,Open,Team B
+WO-00936,HVAC,Medium,Closed,Team C
+WO-00937,HVAC,Medium,Open,Team B
+WO-00938,Fire,Medium,Open,Team A
+WO-00939,HVAC,High,Open,Team C
+WO-00940,HVAC,Medium,Closed,Team B
+WO-00941,Electrical,Low,In Progress,Team C
+WO-00942,Fire,Medium,Open,Team A
+WO-00943,Fire,Low,In Progress,Team A
+WO-00944,HVAC,Medium,In Progress,Team C
+WO-00945,Fire,Low,In Progress,Team C
+WO-00946,Fire,Medium,Open,Team B
+WO-00947,Electrical,Low,Open,Team C
+WO-00948,Fire,Medium,Open,Team C
+WO-00949,Fire,Low,Closed,Team B
+WO-00950,HVAC,High,Open,Team A
+WO-00951,Fire,Low,Open,Team A
+WO-00952,Fire,High,Open,Team C
+WO-00953,HVAC,Low,Open,Team C
+WO-00954,HVAC,High,Open,Team B
+WO-00955,HVAC,Low,Open,Team B
+WO-00956,HVAC,Low,In Progress,Team C
+WO-00957,Fire,High,Open,Team C
+WO-00958,Electrical,Low,Closed,Team B
+WO-00959,Fire,Medium,In Progress,Team B
+WO-00960,HVAC,Medium,Open,Team C
+WO-00961,Electrical,High,Closed,Team B
+WO-00962,HVAC,Medium,Open,Team B
+WO-00963,Electrical,Low,Closed,Team B
+WO-00964,Electrical,High,Open,Team C
+WO-00965,Fire,Medium,Closed,Team C
+WO-00966,HVAC,Low,Closed,Team C
+WO-00967,Electrical,High,Open,Team B
+WO-00968,Electrical,Low,Open,Team B
+WO-00969,Fire,High,Open,Team C
+WO-00970,HVAC,Low,Closed,Team C
+WO-00971,HVAC,High,Open,Team B
+WO-00972,HVAC,Low,Open,Team A
+WO-00973,Fire,High,In Progress,Team C
+WO-00974,Fire,Medium,In Progress,Team B
+WO-00975,HVAC,Medium,Open,Team C
+WO-00976,Electrical,Medium,In Progress,Team C
+WO-00977,Fire,Medium,Open,Team C
+WO-00978,Fire,Medium,Open,Team A
+WO-00979,Fire,Medium,In Progress,Team B
+WO-00980,HVAC,Low,In Progress,Team B
+WO-00981,Electrical,Low,In Progress,Team C
+WO-00982,Electrical,Medium,Closed,Team C
+WO-00983,Fire,Low,Open,Team B
+WO-00984,Electrical,Low,Closed,Team B
+WO-00985,Electrical,Medium,In Progress,Team A
+WO-00986,HVAC,High,Open,Team B
+WO-00987,Electrical,Medium,In Progress,Team C
+WO-00988,HVAC,Low,Closed,Team B
+WO-00989,Fire,Medium,In Progress,Team B
+WO-00990,HVAC,Low,Open,Team B
+WO-00991,Fire,Low,Open,Team C
+WO-00992,HVAC,Medium,Open,Team C
+WO-00993,Electrical,Low,In Progress,Team C
+WO-00994,Electrical,High,Closed,Team C
+WO-00995,HVAC,High,In Progress,Team B
+WO-00996,Fire,Low,Open,Team C
+WO-00997,Electrical,Medium,Open,Team A
+WO-00998,Electrical,High,Closed,Team C
+WO-00999,Electrical,Medium,Closed,Team B
+WO-01000,Electrical,Medium,Open,Team C
