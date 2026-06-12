@@ -17,7 +17,7 @@ if ROOT_DIR not in sys.path:
 # IMPORT AGENTS
 # -----------------------------------
 
-from agents.supervisor_agent import route_query
+from agents.supervisor_agent import supervisor_agent
 from agents.hvac_agent import hvac_agent
 from agents.electrical_agent import electrical_agent
 from agents.fire_agent import fire_agent
