@@ -3,8 +3,7 @@ from backend.config import GROQ_API_KEY
 
 if not GROQ_API_KEY:
     raise ValueError(
-        "GROQ_API_KEY not found. "
-        "Configure it in environment variables or Streamlit secrets."
+        "GROQ_API_KEY not found. Configure it in environment variables or Streamlit secrets."
     )
 
 llm = ChatGroq(
