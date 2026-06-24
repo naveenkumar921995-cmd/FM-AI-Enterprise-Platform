@@ -4,53 +4,27 @@ from database.db import engine
 
 def sql_agent(query):
 
-    query = query.lower()
+    q = query.lower()
 
-    if "open work order" in query:
+    if "asset" in q:
 
-        sql = """
-        SELECT *
-        FROM work_orders
-        WHERE status='Open'
-        """
+        sql = "SELECT * FROM assets LIMIT 50"
 
-    elif "closed work order" in query:
+    elif "incident" in q:
 
-        sql = """
-        SELECT *
-        FROM work_orders
-        WHERE status='Closed'
-        """
+        sql = "SELECT * FROM incidents LIMIT 50"
 
-    elif "critical incident" in query:
+    elif "vendor" in q:
 
-        sql = """
-        SELECT *
-        FROM incidents
-        WHERE severity='Critical'
-        """
+        sql = "SELECT * FROM vendors LIMIT 50"
 
-    elif "vendor" in query:
+    elif "work order" in q:
 
-        sql = """
-        SELECT *
-        FROM vendors
-        """
-
-    elif "asset" in query:
-
-        sql = """
-        SELECT *
-        FROM assets
-        """
+        sql = "SELECT * FROM work_orders LIMIT 50"
 
     else:
 
-        sql = """
-        SELECT *
-        FROM work_orders
-        LIMIT 20
-        """
+        sql = "SELECT * FROM work_orders LIMIT 20"
 
     with engine.connect() as conn:
 

@@ -158,7 +158,7 @@ elif page == "AI Assistant":
         except Exception as e:
 
             result = {
-                "agent": "System",
+                "agent": "system",
                 "answer": str(e)
             }
 
@@ -222,42 +222,16 @@ elif page == "AI Assistant":
 # -----------------------------------
 # ASSETS
 # -----------------------------------
-
 elif page == "Assets":
 
     st.title("🏭 Asset Management")
 
-    assets = pd.read_csv(
-        "data/assets.csv"
+    assets = pd.read_csv("data/assets.csv")
+
+    st.metric(
+        "Total Assets",
+        len(assets)
     )
-
-    col1, col2, col3 = st.columns(3)
-
-    with col1:
-        st.metric(
-            "Total Assets",
-            len(assets)
-        )
-
-    with col2:
-        st.metric(
-            "HVAC Assets",
-            len(
-                assets[
-                    assets["System"] == "HVAC"
-                ]
-            )
-        )
-
-    with col3:
-        st.metric(
-            "Electrical Assets",
-            len(
-                assets[
-                    assets["System"] == "Electrical"
-                ]
-            )
-        )
 
     st.dataframe(
         assets,
@@ -269,65 +243,65 @@ elif page == "Assets":
 
 elif page == "Work Orders":
 
-    st.title("📋 Work Orders")
+    st.title("📋 Work Order Dashboard")
 
-    wo = pd.DataFrame({
+    wo = pd.read_csv(
+        "data/work_orders.csv"
+    )
 
-        "WO ID": [
-            "WO1001",
-            "WO1002",
-            "WO1003"
-        ],
+    c1,c2,c3 = st.columns(3)
 
-        "Priority": [
-            "High",
-            "Medium",
-            "Low"
-        ],
+    with c1:
+        st.metric(
+            "Total WO",
+            len(wo)
+        )
 
-        "Status": [
-            "Open",
-            "Open",
-            "Closed"
-        ]
-    })
+    with c2:
+        st.metric(
+            "Open WO",
+            len(
+                wo[
+                    wo["status"]=="Open"
+                ]
+            )
+        )
+
+    with c3:
+        st.metric(
+            "Closed WO",
+            len(
+                wo[
+                    wo["status"]=="Closed"
+                ]
+            )
+        )
 
     st.dataframe(
         wo,
         use_container_width=True
     )
-
 # -----------------------------------
 # INCIDENTS
 # -----------------------------------
 
 elif page == "Incidents":
 
-    st.title("🚨 Incidents")
+    st.title("🚨 Incident Dashboard")
 
-    incidents = pd.DataFrame({
+    incidents = pd.read_csv(
+        "data/incidents.csv"
+    )
 
-        "Incident ID": [
-            "INC001",
-            "INC002"
-        ],
-
-        "Severity": [
-            "High",
-            "Medium"
-        ],
-
-        "Status": [
-            "Open",
-            "Closed"
-        ]
-    })
+    st.metric(
+        "Total Incidents",
+        len(incidents)
+    )
 
     st.dataframe(
         incidents,
         use_container_width=True
     )
-
 # -----------------------------------
 # ANALYTICS
 # -----------------------------------
