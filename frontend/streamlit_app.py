@@ -292,6 +292,27 @@ elif page == "Incidents":
         use_container_width=True
     )
 # -----------------------------------
+# VENDORS
+# -----------------------------------
+
+elif page == "Vendors":
+
+    st.title("🏢 Vendor Management")
+
+    vendors = pd.read_csv(
+        "data/vendors.csv"
+    )
+
+    st.metric(
+        "Total Vendors",
+        len(vendors)
+    )
+
+    st.dataframe(
+        vendors,
+        use_container_width=True
+    )
+# -----------------------------------
 # ANALYTICS
 # -----------------------------------
 elif page == "Vendors":

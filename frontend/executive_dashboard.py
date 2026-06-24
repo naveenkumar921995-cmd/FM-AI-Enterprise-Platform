@@ -36,6 +36,11 @@ try:
         )
 
     st.divider()
+    st.subheader("Asset Health Distribution")
+
+    st.bar_chart(
+    assets["health_score"]
+)
 
     st.subheader("Assets by System")
 
@@ -48,6 +53,11 @@ try:
     st.bar_chart(
         work_orders["status"].value_counts()
     )
+    st.subheader("Incident Severity")
+
+    st.bar_chart(
+    incidents["severity"].value_counts()
+)
 
 except Exception as e:
 
