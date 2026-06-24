@@ -118,10 +118,9 @@ if page == "Dashboard":
 # -----------------------------------
 # AI ASSISTANT
 # -----------------------------------
-
 elif page == "AI Assistant":
 
-    st.title("🤖 FM AI Assistant")
+    st.title("🤖 FM AI Enterprise Assistant")
 
     query = st.chat_input(
         "Ask HVAC, Electrical, Fire related question..."
@@ -138,27 +137,12 @@ elif page == "AI Assistant":
 
         try:
 
-            category = route_query(query)
-
-            if "hvac" in category:
-                result = hvac_agent(query)
-
-            elif "electrical" in category:
-                result = electrical_agent(query)
-
-            elif "fire" in category:
-                result = fire_agent(query)
-
-            else:
-                result = {
-                    "agent": "Supervisor Agent",
-                    "answer": "Unable to determine correct department."
-                }
+            result = supervisor_agent(query)
 
         except Exception as e:
 
             result = {
-                "agent": "system",
+                "agent": "System",
                 "answer": str(e)
             }
 
@@ -183,42 +167,46 @@ elif page == "AI Assistant":
 
                 result = msg["content"]
 
-                st.subheader(
-                    result.get(
-                        "agent",
-                        "Assistant"
-                    )
-                )
-
-                st.write(
-                    result.get(
-                        "answer",
-                        ""
-                    )
-                )
-
-                if "recommendation" in result:
-
-                    st.info(
-                        result["recommendation"]
-                    )
-
-                if "citations" in result:
+                if isinstance(result, dict):
 
                     st.subheader(
-                        "📚 References"
+                        result.get(
+                            "agent",
+                            "AI Assistant"
+                        )
                     )
 
-                    for item in result["citations"]:
+                    st.write(
+                        result.get(
+                            "answer",
+                            "No response available."
+                        )
+                    )
 
-                        st.write(
-                            f"📄 {item.get('file')} | Page {item.get('page')}"
+                    if result.get("recommendation"):
+
+                        st.info(
+                            result["recommendation"]
                         )
 
-# -----------------------------------
-# ASSETS
-# -----------------------------------
+                    if result.get("citations"):
 
+                        st.subheader(
+                            "📚 References"
+                        )
+
+                        for item in result["citations"]:
+
+                            st.write(
+                                f"📄 {item.get('file','Unknown')} | "
+                                f"Page {item.get('page','N/A')}"
+                            )
+
+                else:
+
+                    st.write(
+                        str(result)
+                    )
 # -----------------------------------
 # ASSETS
 # -----------------------------------
