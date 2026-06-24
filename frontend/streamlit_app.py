@@ -52,6 +52,7 @@ page = st.sidebar.radio(
         "Assets",
         "Work Orders",
         "Incidents",
+        "Vendors",
         "Analytics"
     ]
 )
@@ -293,7 +294,18 @@ elif page == "Incidents":
 # -----------------------------------
 # ANALYTICS
 # -----------------------------------
+elif page == "Vendors":
 
+    st.title("🏢 Vendor Management")
+
+    vendors = pd.read_csv(
+        "data/vendors.csv"
+    )
+
+    st.dataframe(
+        vendors,
+        use_container_width=True
+    )
 elif page == "Analytics":
 
     st.title("📊 Analytics")
